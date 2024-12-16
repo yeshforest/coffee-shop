@@ -1,3 +1,7 @@
+@import url(./section-branch.css);
+@import url(./section-product.css);
+@import url(./section-slogen.css);
+
 :root {
   --bgBlack: #1d1d1b;
   --bgGreen: #c5d6d1;
