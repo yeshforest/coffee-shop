@@ -1,13 +1,15 @@
+@import url(./header.css);
 @import url(./section-client.css);
 @import url(./section-school.css);
 @import url(./section-team.css);
 @import url(./section-blog.css);
-
 @import url(./section-branch.css);
 @import url(./section-product.css);
 @import url(./section-slogen.css);
+@import url(./section-menu.css);
+@import url(./seection-follow.css);
+@import url(./footer.css);
 
-@import "./header.css";
 
 :root {
     --bgBlack: #1d1d1b;
