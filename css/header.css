@@ -1,0 +1,146 @@
+.header {
+	display: inline-flex;
+	flex-direction: column;
+	position: absolute;
+	inset: 0 0 auto 0;
+	z-index: 1000;
+}
+
+.header__announce-bar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4rem;
+	padding: 1rem;
+	margin: 0 auto;
+	color: #FFF;
+	width: 100vw;
+	background-color: var(--bgBlack);
+	font-size: 1.4rem;
+	font-weight: 400;
+	line-height: 1.4rem;
+	text-align: center;
+}
+
+.header__container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	height: 10rem;
+	border-bottom: 1px solid var(--borderBlack100);
+
+	@media (width < 1024px) {
+		grid-template-columns: min-content 1fr;
+		margin-inline: 0.8rem;
+		height: 5rem;
+	}
+}
+
+.header__gnb {
+	ul {
+		display: flex;
+		gap: 4.7rem;
+		margin-left: 4rem;
+	}
+
+	a {
+		color: var(--fontBlack100);
+		font-family: "Space Mono";
+		font-size: 1.7rem;
+		font-weight: 400;
+		line-height: 2.4rem;
+		position: relative;
+		text-decoration: none;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5.3625rem;
+			height: 0.4797rem;
+			background: url('../images/underline.svg') no-repeat;
+			position: absolute;
+			background-size: cover;
+			bottom: -0.4rem;
+			left: 0;
+		}
+	}
+
+	li:nth-child(2) a::after {
+		left: 1.4rem;
+		width: 6.4031rem;
+	}
+
+	@media (width < 1024px) {
+		display: none;
+	}
+
+}
+
+.header__logo {
+	text-align: center;
+}
+
+.header__utillity {
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 3.68rem;
+}
+
+.header__utillity_inner {
+	display: flex;
+	align-items: center;
+	gap: 2.34rem;
+	white-space: nowrap;
+
+	.btn-cart {
+		position: relative;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5.3625rem;
+			height: 0.4797rem;
+			background: url('../images/underline.svg') no-repeat;
+			position: absolute;
+			background-size: cover;
+			bottom: -0.4rem;
+			left: 0.8rem;
+		}
+	}
+
+	.btn-search {
+		position: relative;
+
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5.3625rem;
+			height: 0.4797rem;
+			background: url('../images/underline.svg') no-repeat;
+			position: absolute;
+			background-size: cover;
+			bottom: -0.4rem;
+			left: 0.3rem;
+		}
+	}
+
+	@media (width < 1024px) {
+		justify-self: end;
+		gap: 1rem;
+	}
+}
+
+.btn-open-side-area {
+	padding: 1.95rem 2.2rem;
+	border-left: 1px solid var(--borderBlack50);
+
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 5.45rem;
+		height: 5.8rem;
+		background: url('../images/header/ico_star.svg') no-repeat;
+	}
+}
