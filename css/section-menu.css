@@ -1,0 +1,62 @@
+/* 지울것
+body{
+  overflow-x: hidden;
+} */
+* {
+  box-sizing: border-box;
+}
+.section-menu {
+  border: 1px solid #ff0000;
+  /* border: 1px solid var(--fontBlack100); */
+  height: 69.6625rem;
+}
+.section-menu__container {
+  display: flex;
+  align-items: center;
+  height: 69.6625rem;
+  border: 1px solid var(--fontBlack100);
+}
+.section-menu__menu {
+  flex: 1;
+  padding: 15.84rem 18.24rem 15.94rem 16.32rem; /* ????이게맞나 */
+  li:not(:last-child) {
+    margin-bottom: 2.7rem;
+  }
+}
+.section-menu__item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.2rem;
+}
+.section-menu__title {
+  color: var(--fontBlack100);
+  font-family: var(--titleFont);
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 2.5rem; /* 125% */
+  letter-spacing: 0.08rem;
+  text-transform: uppercase;
+}
+.section-menu__price {
+  color: var(--fontBlack100);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem; /* 133.333% */
+  letter-spacing: 0.072rem;
+  text-transform: uppercase;
+}
+
+.section-menu__description {
+  color: var(--fontBlack100);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.4rem; /* 133.333% */
+}
+
+section-menu__menu-image {
+  flex: 1;
+  img {
+    object-fit: cover;
+    height: 100%;
+  }
+}
