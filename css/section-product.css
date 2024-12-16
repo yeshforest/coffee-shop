@@ -1,0 +1,52 @@
+.product-title {
+  color: var(--fontBlack100);
+  font-family: Anton;
+  font-size: 4.375rem;
+  font-weight: 400;
+  line-height: 5rem;
+  letter-spacing: -0.0875rem;
+  text-transform: uppercase;
+  padding: 2.4rem 0;
+  padding-left: 3.13rem;
+  border-bottom: 1px solid black;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+}
+
+.card {
+  padding: 2.6rem;
+  padding-bottom: 2.2rem;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.card:first-child {
+  border-left: 1px solid black;
+}
+
+.product-card__img {
+  width: 24.6rem;
+  height: 25.5rem;
+}
+
+.product-card__name {
+  color: var(--fontBlack100);
+  font-family: Anton;
+  font-size: 1.5625rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.03125rem;
+  text-transform: uppercase;
+  margin-top: 1.9rem;
+}
+
+.product-card__price {
+  color: var(--fontBlack100);
+  font-family: "Space Mono";
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.5rem;
+}
