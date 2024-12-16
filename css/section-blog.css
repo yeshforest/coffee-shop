@@ -1,0 +1,111 @@
+.section-blog__left {
+    border-right: 1px solid black;
+}
+
+.section-blog__title {
+    color: #202020;
+    font-family: var(--titleFont);
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 8rem;
+    letter-spacing: -0.14rem;
+    text-transform: uppercase;
+    padding-top: 5.2rem;
+    padding-left: 6rem;
+    padding-right: 23.3rem;
+    width: 48.4622rem;
+
+}
+
+.section-blog__highlight {
+    background: url(../images/text-cover1.png) no-repeat;
+    width: 13.8594rem;
+    height: 9.6797rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.sectioin-blog__container {
+    display: flex;
+}
+
+.section-blog__right {
+    width: 100%;
+}
+
+.section-blog__content {
+    display: flex;
+    padding-top: 4.8rem;
+    padding-bottom: 4.8rem;
+    padding-left: 4.8rem;
+    /* padding: 4.8rem; */
+    border-bottom: 1px solid #1D1D1B;
+}
+
+.section-blog__content img {
+    padding-right: 4.4rem;
+    border-radius: 1rem;
+}
+
+.section-blog__content1 {
+    color: #202020;
+    font-family: "Space Mono";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+}
+
+.section-blog__content2 {
+    color: #202020;
+    font-family: Anton;
+    font-size: 3.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 4.5rem;
+    width: 36.7997rem;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    padding-top: 1rem;
+}
+
+.section-blog__content3 {
+    padding-top: 10.84rem;
+    color: #1D1D1B;
+    font-family: Anton;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    text-transform: uppercase;
+}
+
+.section-blog__content3::after {
+    background: url(../images/blog/blog_arrow.svg) no-repeat 0px 0px;
+    content: "";
+    display: inline-block;
+    width: 2.8rem;
+    height: 2.55rem;
+
+}
+
+.section-blog__btn {
+    text-decoration: none;
+    background: url(../images/btn_bg.svg) #1D1D1B;
+    margin-left: 6rem;
+    margin-top: 63.26rem;
+    display: flex;
+    width: 15.12rem;
+    height: 5.9rem;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.136rem;
+    text-transform: uppercase;
+
+}

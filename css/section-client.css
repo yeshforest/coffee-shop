@@ -1,0 +1,29 @@
+.section-client__title {
+    border-top: 1px solid var(--titleFont);
+    color: var(--fontBlack100);
+    font-family: var(--titleFont);
+    padding-left: 5rem;
+    padding-bottom: 3.1rem;
+    padding-top: 3.5rem;
+    font-size: 7rem;
+    font-weight: 400;
+    line-height: 8rem;
+    letter-spacing: -0.14rem;
+    text-transform: uppercase;
+}
+
+.section-client__container {
+    border-top: 1px solid #202020;
+    display: flex;
+
+}
+
+.section-client__box {
+    display: flex;
+    width: 38.4188rem;
+    height: 31.1rem;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid #1D1D1B;
+    border-bottom: 1px solid #1D1D1B;
+}
