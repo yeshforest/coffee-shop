@@ -1,0 +1,61 @@
+.section-school {
+    background: var(--bgGreen);
+}
+
+.section-school__box {
+    display: flex;
+    align-items: center;
+}
+
+.section-school__image {
+    margin-left: 11.8rem;
+    margin-top: 13.7rem;
+    margin-bottom: 13.8rem;
+    margin-right: 13.42rem;
+}
+
+.section-school__image img {
+    border-radius: 1rem;
+}
+
+.section-school__title {
+    color: #202020;
+    font-family: var(--titleFont);
+    font-size: 3.5rem;
+    font-weight: 400;
+    line-height: 4.5rem;
+    letter-spacing: 0.07rem;
+    text-transform: uppercase;
+    margin-right: 14.21rem;
+    margin-bottom: 1.2rem;
+}
+
+.section-client__text {
+    color: #202020;
+    font-family: "Space Mono";
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    margin-right: 12.59rem;
+}
+
+.btn {
+    text-decoration: none;
+    background: url(../images/btn_bg.svg) #1D1D1B;
+    margin-top: 5.8rem;
+    display: flex;
+    width: 15.12rem;
+    height: 5.9rem;
+    justify-content: center;
+    align-items: center;
+    color: #FFF;
+    text-align: center;
+    font-family: Anton;
+    font-size: 1.7rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.7rem;
+    letter-spacing: 0.136rem;
+    text-transform: uppercase;
+
+}
