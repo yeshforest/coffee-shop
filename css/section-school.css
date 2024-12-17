@@ -5,13 +5,14 @@
 .section-school__box {
     display: flex;
     align-items: center;
+    border-bottom: 1px solid var(--borderBlack75);
 }
 
 .section-school__image {
     margin-left: 11.8rem;
     margin-top: 13.7rem;
     margin-bottom: 13.8rem;
-    margin-right: 13.42rem;
+    margin-right: 5.42rem;
 }
 
 .section-school__image img {
@@ -19,40 +20,41 @@
 }
 
 .section-school__title {
-    color: #202020;
+    color: var(--fontBlack100);
     font-family: var(--titleFont);
     font-size: 3.5rem;
     font-weight: 400;
     line-height: 4.5rem;
     letter-spacing: 0.07rem;
     text-transform: uppercase;
-    margin-right: 14.21rem;
+    padding-top: 17.1rem;
+    margin-left: 8rem;
     margin-bottom: 1.2rem;
 }
 
 .section-client__text {
-    color: #202020;
-    font-family: "Space Mono";
+    color: var(--fontBlack100);
     font-size: 1.8rem;
     font-weight: 400;
     line-height: 2.4rem;
     margin-right: 12.59rem;
+    margin-left: 8rem;
+    margin-bottom: 5.8rem;
 }
 
 .btn {
     text-decoration: none;
-    background: url(../images/btn_bg.svg) #1D1D1B;
-    margin-top: 5.8rem;
+    background: url(../images/btn_bg.svg) var(--bgBlack);
+    margin-left: 8rem;
+    margin-bottom: 17.5rem;
     display: flex;
-    width: 15.12rem;
-    height: 5.9rem;
+    padding: 2rem 3.5219rem 2.2rem 3.4rem;
     justify-content: center;
     align-items: center;
-    color: #FFF;
+    color: var(--fontWhite);
     text-align: center;
-    font-family: Anton;
+    font-family: var(--titleFont);
     font-size: 1.7rem;
-    font-style: normal;
     font-weight: 400;
     line-height: 1.7rem;
     letter-spacing: 0.136rem;

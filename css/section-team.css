@@ -1,6 +1,4 @@
 .section-team__title {
-    border-top: 1px solid #202020;
-    border-bottom: 1px solid #202020;
     padding-left: 5rem;
     padding-bottom: 3.1rem;
     padding-top: 3.5rem;
@@ -11,19 +9,36 @@
     line-height: 8rem;
     letter-spacing: -0.14rem;
     text-transform: uppercase;
+
+    @media (width < 480px) {
+        font-size: 3.5rem;
+    }
 }
 
 .section-team__container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 1fr;
+
+    @media (width < 480px) {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 5rem;
+    }
 }
 
 .section-team__box {
     padding-top: 3.8rem;
     padding-left: 3.8rem;
     padding-right: 3.8rem;
-    border-right: 1px solid #1D1D1B;
-    border-bottom: 1px solid #1D1D1B;
+    border-top: 1px solid var(--borderBlack50);
+    border-right: 1px solid var(--borderBlack50);
+    border-bottom: 1px solid var(--borderBlack50);
 
+    @media (width < 480px) {
+        border-left: 1px solid var(--borderBlack50);
+        margin-left: 1.5rem;
+        box-shadow: 2px 3px 5px 0px;
+    }
 }
 
 .section-team__subtext1 {
