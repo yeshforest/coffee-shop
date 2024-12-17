@@ -1,0 +1,61 @@
+.section-reservation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 9rem;
+  padding-bottom: 8.3rem;
+  border-top: 1px solid var(--borderBlack75);
+  background-image: url("../images/bg.png");
+}
+
+.reservation-title {
+  color: var(--fontBlack100);
+  font-family: Anton;
+  font-size: 3.1rem;
+  line-height: 3.7rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.2rem;
+}
+
+.reservation-wrapper {
+  @media (width < 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.reservation-select {
+  border: none;
+  width: 21.6rem;
+  height: 2.3rem;
+  border-bottom: 1px solid var(--borderBlack75);
+  margin-right: 2.1rem;
+  margin-top: 1.7rem;
+  margin-bottom: 2.6rem;
+  background: url("../images/ico_bottom-arrow.svg") no-repeat right;
+  background-size: 1.1rem 0.6rem;
+  appearance: none;
+}
+
+.reservation-option {
+  color: var(--fontBlack100);
+  font-family: "Space Mono";
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+
+.reservation-btn {
+  color: var(--fontWhite);
+  text-align: center;
+  font-family: Anton;
+  font-size: 1rem;
+  line-height: 1rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  background: url(../images/btn_bg.svg) var(--borderBlack75);
+  width: 10.1rem;
+  padding: 1.3rem 0;
+}
