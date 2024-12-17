@@ -1,24 +1,18 @@
-/* 지울것
-body{
-  overflow-x: hidden;
-} */
 * {
   box-sizing: border-box;
 }
 .section-menu {
-  border: 1px solid #ff0000;
-  /* border: 1px solid var(--fontBlack100); */
+  border-bottom: 1px solid var(--borderBlack75);
   height: 69.6625rem;
 }
 .section-menu__container {
   display: flex;
   align-items: center;
   height: 69.6625rem;
-  border: 1px solid var(--fontBlack100);
 }
-.section-menu__menu {
+.section-menu__menubox {
   flex: 1;
-  padding: 15.84rem 18.24rem 15.94rem 16.32rem; /* ????이게맞나 */
+  padding: 15.84rem 18.24rem 15.94rem 16.32rem;
   li:not(:last-child) {
     margin-bottom: 2.7rem;
   }
@@ -53,7 +47,7 @@ body{
   line-height: 2.4rem; /* 133.333% */
 }
 
-section-menu__menu-image {
+.section-menu__menu-image {
   flex: 1;
   img {
     object-fit: cover;
