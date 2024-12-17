@@ -1,0 +1,123 @@
+.section-promotion {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr 0.01fr;
+	background-color: var(--bgVanila);
+	border-left: 1px solid black;
+	border-top: 1px solid black;
+
+	:last-of-type {
+		border-right: none;
+	}
+}
+
+.section-promotion__content {
+	padding: 8.2rem 0 7.8rem 9.34rem;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+
+	.section-promotion__content-title {
+		color: #202020;
+		font-family: Anton;
+		font-size: 5rem;
+		font-weight: 400;
+		line-height: 6rem;
+		letter-spacing: 0.1rem;
+		text-transform: uppercase;
+		margin-bottom: 2.2rem;
+	}
+
+	span {
+		position: relative;
+	}
+
+	span::after {
+		content: "";
+		position: absolute;
+		top: 0;
+		left: -1rem;
+		display: inline-block;
+		background: url(../images/text-cover1.png) no-repeat;
+		width: 26.3884rem;
+		height: 6.8767rem;
+	}
+
+	.section-promotion__content-description {
+		color: --var(fontBlack100);
+		font-family: "Space Mono";
+		font-size: 1.8rem;
+		font-style: normal;
+		font-weight: 400;
+		line-height: 2.4rem;
+		margin-bottom: 11.47rem;
+	}
+}
+
+.btn-viewmore {
+	color: var(--fontBlack50);
+	text-align: center;
+	font-family: var(--titleFont);
+	font-size: 1.6rem;
+	font-weight: 400;
+	line-height: 1.6rem;
+	letter-spacing: 0.096rem;
+	text-transform: uppercase;
+	position: relative;
+}
+
+.btn-viewmore::after {
+	display: inline-block;
+	content: "";
+	background: url(../images/ico_right-arrow.svg) no-repeat;
+	background-size: cover;
+	width: 2.8rem;
+	height: 2.55rem;
+	position: absolute;
+	top: -0.5rem;
+	left: 8rem;
+}
+
+.section-promotion__product {
+	display: flex;
+	flex-direction: column;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+
+	img {
+		align-self: center;
+		width: 39.4rem;
+		height: 40.8766rem;
+		margin: 4.17rem 4.3rem 3.1rem 4.3rem;
+	}
+
+	.section-promotion__product-title {
+		color: var(--fontBlack100);
+		font-family: Anton;
+		font-size: 1.5625rem;
+		line-height: 1.875rem;
+		letter-spacing: 0.03125rem;
+		text-transform: uppercase;
+		margin-left: 4.3rem;
+		margin-bottom: 0.5rem;
+	}
+}
+
+.price {
+	color: var(--fontBlack100);
+	font-family: "Space Mono";
+	font-size: 1.125rem;
+	font-weight: 400;
+	line-height: 1.5rem;
+	margin-left: 4.3rem;
+	margin-bottom: 3.6rem;
+}
+
+.section-promotion__promotion {
+	color: #FFF;
+	text-align: center;
+	font-family: Anton;
+	font-size: 10rem;
+	font-weight: 400;
+	line-height: 11rem;
+	letter-spacing: -0.2rem;
+	text-transform: capitalize;
+}
