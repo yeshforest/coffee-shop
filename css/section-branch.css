@@ -5,15 +5,28 @@
 .branch-container {
   display: grid;
   grid-template-columns: repeat(3, 7.49rem) 1fr;
-  grid-template-rows: 1fr;
+
+  @media (width < 1024px) {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .branch-name {
-  border-right: 1px solid black;
+  border-right: 1px solid var(--borderBlack75);
   display: flex;
   align-items: flex-end;
   padding-bottom: 3.13rem;
-  span {
+
+  @media (width < 1024px) {
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    border: none;
+    border-bottom: 1px solid var(--borderBlack75);
+  }
+  a {
+    text-decoration: none;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
     padding-left: 1.44rem;
@@ -24,14 +37,27 @@
     line-height: 3.75rem;
     letter-spacing: 0.0625rem;
     text-transform: uppercase;
+
+    @media (width < 1024px) {
+      writing-mode: horizontal-tb;
+      transform: rotate(0deg);
+      width: auto;
+      padding: 1rem 0;
+    }
   }
 }
 
 .branch-detail {
   display: flex;
   gap: 3.75rem;
-  /* margin: 3.75rem 0; */
   margin: 6.22rem 0;
+  justify-content: flex-start;
+
+  @media (width < 1024px) {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
 }
 
 .branch-detail__left-column {
@@ -39,6 +65,13 @@
     width: 60rem;
     height: 48.8125rem;
     margin-left: 3.75rem;
+    object-fit: cover;
+
+    @media (width < 1024px) {
+      width: 100%;
+      margin: 0;
+      margin-top: 3.2rem;
+    }
   }
 }
 
@@ -46,6 +79,10 @@
   display: flex;
   flex-direction: column;
   margin-right: 3.75rem;
+
+  @media (width < 1024px) {
+    margin: 0;
+  }
 }
 
 .branch-detail-text {
@@ -77,20 +114,18 @@
 
 .branch-detail__contact-btn {
   text-decoration: none;
-  background: url(../images/btn_bg.svg) #1d1d1b;
+  background: url(../images/btn_bg.svg);
   margin-top: 5.8rem;
   display: flex;
   width: 9.73rem;
   height: 3.6rem;
   justify-content: center;
   align-items: center;
-  color: #fff;
+  color: var(--bgWhite100);
   text-align: center;
   font-family: Anton;
   font-size: 1.0625rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 1.0625rem; /* 100% */
+  line-height: 1.0625rem;
   letter-spacing: 0.085rem;
   text-transform: uppercase;
   border: none;

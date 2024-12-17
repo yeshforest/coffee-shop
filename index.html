@@ -82,9 +82,9 @@
       <section class="section-branch">
         <h2 class="a11y-hidden">지점</h2>
         <div class="branch-container">
-          <div class="branch-name"><span>Lisbon Coffee Salon</span></div>
-          <div class="branch-name"><span>Berlin Coffee Roastery</span></div>
-          <div class="branch-name"><span>Amsterdam Coffee Shop</span></div>
+          <div class="branch-name"><a href="#">Lisbon Coffee Salon</a></div>
+          <div class="branch-name"><a href="#">Berlin Coffee Roastery</a></div>
+          <div class="branch-name"><a href="#">Amsterdam Coffee Shop</a></div>
           <div class="branch-detail">
             <div class="branch-detail__left-column">
               <img src="./images/branch/@branch.png" alt="@branch.png" />
@@ -137,6 +137,7 @@
               />
               <h4 class="product-card__name">Decaf Espresso</h4>
               <span class="product-card__price">$41.00</span>
+              <span class="product-card__bedge-new">new</span>
             </li>
             <li class="card">
               <img
@@ -155,6 +156,7 @@
               />
               <h4 class="product-card__name">Decaf French Roast</h4>
               <span class="product-card__price">$45.00</span>
+              <span class="product-card__bedge-sold">sold</span>
             </li>
           </ul>
         </div>
@@ -166,8 +168,12 @@
             <div class="slogen-title-wrapper">
               <p class="slogen-title">
                 swing by our place<br />we also have food.
+                <img
+                  class="text-cover1"
+                  src="./images/text-cover1.png"
+                  alt="text-cover1.png"
+                />
               </p>
-              <img class="dlatl" src="./images/text-cover1.png" alt="" />
             </div>
             <img
               class="slogen-img"
@@ -207,6 +213,19 @@
       </section>
       <section class="section-reservation">
         <h2 class="a11y-hidden">예약</h2>
+        <h3 class="reservation-title">Reserve Your Table</h3>
+        <div class="reservation-wrapper">
+          <select class="reservation-select" name="" id="">
+            <option class="reservation-option" value="">1 person</option>
+          </select>
+          <select class="reservation-select" name="" id="">
+            <option class="reservation-option" value="">21. 10. 22</option>
+          </select>
+          <select class="reservation-select" name="" id="">
+            <option class="reservation-option" value="">11:00</option>
+          </select>
+          <button class="reservation-btn">Book a table</button>
+        </div>
       </section>
       <!-- 동욱까지 -->
       <!-- 준영 -->
