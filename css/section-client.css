@@ -10,10 +10,14 @@
     line-height: 8rem;
     letter-spacing: -0.14rem;
     text-transform: uppercase;
+
+    @media (width < 480px) {
+        font-size: 3.5rem;
+    }
 }
 
 .section-client__container {
-    border-top: 1px solid #202020;
+    border-top: 1px solid var(--borderBlack75);
     display: flex;
 
 }
@@ -24,6 +28,6 @@
     height: 31.1rem;
     justify-content: center;
     align-items: center;
-    border-right: 1px solid #1D1D1B;
-    border-bottom: 1px solid #1D1D1B;
+    border-right: 1px solid var(--borderBlack50);
+    border-bottom: 1px solid var(--borderBlack50);
 }
