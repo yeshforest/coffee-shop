@@ -1,5 +1,5 @@
 .section-client__title {
-    border-top: 1px solid var(--titleFont);
+    border-right: 1px solid var(--borderBlack75);
     color: var(--fontBlack100);
     font-family: var(--titleFont);
     padding-left: 5rem;
@@ -11,8 +11,9 @@
     letter-spacing: -0.14rem;
     text-transform: uppercase;
 
-    @media (width < 480px) {
-        font-size: 3.5rem;
+    @media (width < 1024px) {
+        font-size: 2.4rem;
+        letter-spacing: 0.1rem;
     }
 }
 

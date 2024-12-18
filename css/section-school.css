@@ -5,6 +5,7 @@
 .section-school__box {
     display: flex;
     align-items: center;
+    border-right: 1px solid var(--borderBlack75);
     border-bottom: 1px solid var(--borderBlack75);
 }
 
@@ -16,6 +17,8 @@
 }
 
 .section-school__image img {
+    width: 100%;
+    object-fit: cover;
     border-radius: 1rem;
 }
 
