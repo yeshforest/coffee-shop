@@ -11,13 +11,15 @@
 }
 
 .section-follow__grid-container {
+  border: 1px solid red;
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(5, 33.2rem);
   gap: 3.17rem;
-  margin: 5rem;
+  /* justify-content: center; */
+  margin: 3.13rem;
   .grid-image {
-    width: 34.86rem;
-    height: 34.86rem;
+    width: 33.2rem;
+    height: 33.2rem;
     border-radius: 1rem;
   }
 }
