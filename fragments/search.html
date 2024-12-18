@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- 초기화 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css"
+    />
+    <!-- 글씨체 -->
+    <!-- space mono -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- anton -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Mansalva -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Mansalva&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- 스타일 -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Early Birds Search Page</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container">
+        <h2 class="a11y-hidden">메뉴</h2>
+        <button class="header__gnb__btn-menu">
+          <span class="a11y-hidden">메뉴 버튼</span>
+        </button>
+        <nav class="header__gnb">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Members</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="#">News</a></li>
+          </ul>
+        </nav>
+        <h1 class="header__logo">
+          <a href="">
+            <img src="./images/header/logo.png" alt="early birds coffee" />
+          </a>
+        </h1>
+        <div class="header__utillity">
+          <div class="header__utillity_inner">
+            <button type="button" class="btn-cart">
+              <span class="a11y-hidden">cart</span>cart (0)
+            </button>
+            <button type="button" class="btn-search">
+              <span class="a11y-hidden">search</span>search
+            </button>
+          </div>
+          <button type="button" class="btn-open-side-area">
+            <span class="a11y-hidden">open side area</span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="search-container">
+        <div class="search-logo">
+          <span>Early Birds</span>
+          <p>
+            Search What You Want, What You Need!
+            <img src="../images/text-cover1.png" alt="" />
+          </p>
+        </div>
+        <input class="search-bar" type="text" placeholder="Search Product..." />
+        <div class="recommand-wrapper">
+          <ul class="recommand__cards">
+            <li class="recommand-card">
+              <div class="recommand__product-img">
+                <img src="../images/product/product_1.png" alt="" />
+              </div>
+              <span class="recommand__product-name">French Roast</span>
+            </li>
+            <li class="recommand-card">
+              <div class="recommand__product-img">
+                <img src="../images/product/product_2.png" alt="" />
+              </div>
+              <span class="recommand__product-name">Decaf Espresso</span>
+            </li>
+            <li class="recommand-card">
+              <div class="recommand__product-img">
+                <img src="../images/product/product_3.png" alt="" />
+              </div>
+              <span class="recommand__product-name">Costa Rica</span>
+            </li>
+            <li class="recommand-card">
+              <div class="recommand__product-img">
+                <img src="../images/product/product_4.png" alt="" />
+              </div>
+              <span class="recommand__product-name">Decaf French Roast</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
