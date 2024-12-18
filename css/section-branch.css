@@ -29,13 +29,14 @@
     text-decoration: none;
     writing-mode: vertical-lr;
     transform: rotate(-180deg);
-    padding-left: 1.44rem;
+    padding-left: 0.5rem;
     width: 100%;
     color: var(--fontBlack100);
     font-family: Anton;
-    font-size: 3.125rem;
-    line-height: 3.75rem;
-    letter-spacing: 0.0625rem;
+    font-size: 5rem;
+    font-weight: 400;
+    line-height: 6rem;
+    letter-spacing: 0.1rem;
     text-transform: uppercase;
 
     @media (width < 1024px) {
@@ -43,6 +44,7 @@
       transform: rotate(0deg);
       width: auto;
       padding: 1rem 0;
+      font-size: 3rem;
     }
   }
 }
@@ -88,24 +90,23 @@
 .branch-detail-text {
   color: #202020;
   font-family: "Space Mono";
-  font-size: 1.125rem;
-  font-style: normal;
+  font-size: 1.8rem;
   font-weight: 400;
-  line-height: 1.5rem;
-  margin-top: 0.62rem;
+  line-height: 2.4rem;
+  margin-bottom: 1rem;
 }
 
 .branch-detail__title {
-  letter-spacing: 0.03125rem;
+  letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-family: Anton;
-  font-size: 1.5625rem;
+  font-size: 2.5rem;
   margin-top: calc(2.81rem - 0.62rem);
-  margin-bottom: calc(1.5rem - 0.62rem);
+  margin-bottom: 2.4rem;
 }
 
 .branch-detail__runtime-up {
-  margin-top: calc(1.5rem + 0.62rem);
+  margin-top: calc(1.5rem + 1rem);
 }
 
 .branch-detail__runtime-down {

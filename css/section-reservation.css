@@ -7,16 +7,21 @@
   padding-bottom: 8.3rem;
   border-top: 1px solid var(--borderBlack75);
   background-image: url("../images/bg.png");
+  border-bottom: 1px solid var(--borderBlack75);
 }
 
 .reservation-title {
   color: var(--fontBlack100);
   font-family: Anton;
-  font-size: 3.1rem;
-  line-height: 3.7rem;
-  letter-spacing: 0.2rem;
+  font-size: 5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 6rem;
+  letter-spacing: 0.1rem;
   text-transform: uppercase;
-  margin-bottom: 1.2rem;
+  @media (width < 1024px) {
+    font-size: 3rem;
+  }
 }
 
 .reservation-wrapper {

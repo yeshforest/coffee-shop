@@ -11,53 +11,53 @@
 @import url(./section-slogen.css);
 @import url(./section-menu.css);
 @import url(./section-follow.css);
-@import url(./footer.css);
 @import url(./section-reservation.css);
-
+@import url(./footer.css);
+@import url(./search.css);
 
 :root {
-    --bgBlack: #1d1d1b;
-    --bgGreen: #c5d6d1;
-    --fontBlack100: #202020;
-    --fontBlack50: #1d1d1b;
-    --fontYellow: #fbed81;
-    --fontWhite: #ffffff;
-    --bgVanila: #fdf1d9;
-    --bgWhite100: #ffffff;
-    --bgWhite50: #f8f8f8;
-    --titleFont: "Anton", sans-serif;
-    --imgFont: "Mansalva", sans-serif;
-    --borderBlack100: #707070;
-    --borderBlack75: #202020;
-    --borderBlack50: #1d1d1b;
+  --bgBlack: #1d1d1b;
+  --bgGreen: #c5d6d1;
+  --fontBlack100: #202020;
+  --fontBlack50: #1d1d1b;
+  --fontYellow: #fbed81;
+  --fontWhite: #ffffff;
+  --bgVanila: #fdf1d9;
+  --bgWhite100: #ffffff;
+  --bgWhite50: #f8f8f8;
+  --titleFont: "Anton", sans-serif;
+  --imgFont: "Mansalva", sans-serif;
+  --borderBlack100: #707070;
+  --borderBlack75: #202020;
+  --borderBlack50: #1d1d1b;
 }
 
 * {
-    font-family: "Space Mono", sans-serif;
-    box-sizing: border-box;
+  font-family: "Space Mono", sans-serif;
+  box-sizing: border-box;
 }
 
 /* Normalize */
 button {
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-		padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 body {
-    font-size: 1rem;
-    overflow-x: hidden;
+  font-size: 1rem;
+  overflow-x: hidden;
 }
 
 .a11y-hidden {
-    overflow: hidden;
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    clear: rect(1px, 1px, 1px, 1px);
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clear: rect(1px, 1px, 1px, 1px);
 }
