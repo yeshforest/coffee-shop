@@ -7,6 +7,10 @@
     align-items: center;
     border-right: 1px solid var(--borderBlack75);
     border-bottom: 1px solid var(--borderBlack75);
+
+    @media (width < 480px) {
+        display: block;
+    }
 }
 
 .section-school__image {
@@ -14,12 +18,21 @@
     margin-top: 13.7rem;
     margin-bottom: 13.8rem;
     margin-right: 5.42rem;
+    display: flex;
+    justify-content: center;
+
+    @media (width < 480px) {
+        margin: 0rem;
+    }
 }
 
 .section-school__image img {
-    width: 100%;
-    object-fit: cover;
     border-radius: 1rem;
+
+    @media (width < 480px) {
+        margin-top: 10rem;
+        width: 80%;
+    }
 }
 
 .section-school__title {
@@ -33,6 +46,7 @@
     padding-top: 17.1rem;
     margin-left: 8rem;
     margin-bottom: 1.2rem;
+
 }
 
 .section-client__text {

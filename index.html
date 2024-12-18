@@ -25,6 +25,14 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Mansalva&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
       rel="stylesheet"
     />
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!-- 스타일 -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -43,8 +51,8 @@
         </button>
         <nav class="header__gnb">
           <ul>
-            <li><a href="./fragments/search.html">Home</a></li>
-            <li><a href="#">Members</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="members.html">Members</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">News</a></li>
           </ul>
@@ -416,7 +424,14 @@
         <h2 class="a11y-hidden">블로그</h2>
         <div class="sectioin-blog__container">
           <div class="section-blog__left">
-            <h2 class="section-blog__title">Recent blog posts Explore now</h2>
+            <h2 class="section-blog__title">
+              Recent blog posts Explore now
+              <img
+                class="section-blog__text-cover"
+                src="./images/text-cover1.png"
+                alt="section-blog__text-cover.png"
+              />
+            </h2>
             <button class="section-blog__btn">read all news</button>
           </div>
           <div class="section-blog__right">
@@ -583,6 +598,7 @@
       <section class="section-menu">
         <h2 class="a11y-hidden">커피메뉴</h2>
         <div class="section-menu__container">
+          <h3 class="section-menu__hidden-title">Our<br />Coffee</h3>
           <ul class="section-menu__menubox">
             <li class="section-menu__menu-items">
               <div class="section-menu__item">
@@ -681,6 +697,12 @@
           <li><a href="#">Instagram</a></li>
           <li><a href="#">Twitter</a></li>
         </ul>
+
+        <div class="footer__sns-icon">
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-twitter"></i>
+        </div>
       </div>
     </footer>
     <!-- 찬미까지 -->
