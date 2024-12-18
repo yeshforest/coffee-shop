@@ -1,14 +1,13 @@
 .section-menu {
-  border-bottom: 1px solid var(--borderBlack75);
+  width: 100vw;
   height: 69.6625rem;
+  border-bottom: 1px solid var(--borderBlack75);
 }
 .section-menu__container {
   display: flex;
-  align-items: center;
-  height: 69.6625rem;
+  /* align-items: center; */
 }
 .section-menu__menubox {
-  flex: 1;
   padding: 15.84rem 18.24rem 15.94rem 16.32rem;
   li:not(:last-child) {
     margin-bottom: 2.7rem;
@@ -17,6 +16,7 @@
 .section-menu__item {
   display: flex;
   justify-content: space-between;
+  gap: 45.72rem;
   margin-bottom: 0.2rem;
 }
 .section-menu__title {
@@ -46,8 +46,7 @@
 
 .section-menu__menu-image {
   flex: 1;
-  img {
-    object-fit: cover;
-    height: 100%;
-  }
+  height: 69.6625rem;
+  background: url(../images/menu/@menu.png) no-repeat center center;
+  background-size: cover;
 }

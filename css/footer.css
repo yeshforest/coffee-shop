@@ -17,6 +17,14 @@
   display: flex;
   gap: 3.6rem;
 }
+.footer__mypage {
+  width: 41.5rem;
+  padding-right: 31.7rem;
+}
+.footer__sns {
+  width: 41.5rem;
+  height: 8.9rem;
+}
 
 .footer__logo {
   position: relative;
@@ -34,30 +42,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  /* &::after {
-    content: '';
-    display: block;
-    width: 25.6813rem;
-    height: rem;
-    background-image: url('../images/underline.svg');
-    background-size: cover;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-  } */
 }
-
-/* .footer__information p::after, .footer__mypage p::after, .footer__sns p::after {
-  content: '';
-  display: block;
-  width: 25.6813rem;
-  height: 0.5rem;
-  background-image: url('../images/underline.svg');
-  background-size: cover;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-} */
 
 .footer__title {
   color: var(--fontBlack100);
