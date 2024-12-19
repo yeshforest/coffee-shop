@@ -35,15 +35,16 @@
   --borderBlack25: #000000;
 }
 
+* {
+  font-family: "Space Mono", sans-serif;
+  box-sizing: border-box;
+}
+
+/* 가로스크롤 대응 */
 html,
 body {
   max-width: 100%;
   overflow-x: hidden;
-}
-
-* {
-  font-family: "Space Mono", sans-serif;
-  box-sizing: border-box;
 }
 
 /* Normalize */
