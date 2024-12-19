@@ -1,10 +1,6 @@
 .section-review {
 	display: flex;
 	position: relative;
-
-	@media (width <480px) {
-	height: 100vh;
-	}
 }
 
 .section-review__thumbnail {
@@ -64,11 +60,14 @@
 	line-height: 4.5rem;
 	letter-spacing: 0.07rem;
 	text-transform: uppercase;
-
 	padding-inline: 0.8rem;
 	margin-bottom: 5.3rem;
+	white-space: pre-line;
+
 	@media (width <480px) {
-		font-size: 2.4rem;
+		font-size: 3rem;
+		padding: 0;
+		white-space: normal;
 	}
 }
 
@@ -76,7 +75,7 @@
 	color: var(--fontBlack100);
 	text-align: center;
 	font-size: 1.8rem;
-	line-height: 2.4rem;
+	line-height: 3rem;
 	margin-bottom: 7.2rem;
 }
 

@@ -96,8 +96,15 @@
 	@media (width < 480px) {
 		top: 55%;
 		left: 50%;
-		transform: translate(-110%, -50%);
-		color: black;
+		transform: translate(-160%, -50%);
+		color: white;
+		font-size: 8rem;
+		line-height: 150%;
+
+
+	&::after {
+		left: 0rem;
+	}
 	}
 }
 
