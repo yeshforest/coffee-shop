@@ -12,8 +12,10 @@
     text-transform: uppercase;
 
     @media (width < 480px) {
-        padding-left: 0.5rem;
+        margin-left: 0.5rem;
+        padding: 0;
         font-size: 3rem;
+        line-height: 5rem;
     }
 }
 
@@ -23,6 +25,10 @@
     grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
     grid-template-rows: 1fr;
 
+    @media (width < 480px) {
+        display: block;
+    }
+
 }
 
 .section-client__box {
@@ -30,6 +36,10 @@
     justify-content: center;
     border-right: 1px solid var(--borderBlack50);
     border-bottom: 1px solid var(--borderBlack50);
+
+    @media (width < 480px) {
+        background-color: var(--bgVanila);
+    }
 }
 
 .section-client__img {
@@ -38,6 +48,7 @@
 
     @media (width < 480px) {
         overflow: hidden;
+        padding: 2rem;
     }
 
 }

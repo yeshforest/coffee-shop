@@ -11,9 +11,10 @@
     text-transform: uppercase;
 
     @media (width < 480px) {
-        padding-left: 0.5rem;
+        padding: 0;
+        margin-left: 0.5rem;
         font-size: 3rem;
-        letter-spacing: 0.14rem;
+        line-height: 5rem;
     }
 }
 
