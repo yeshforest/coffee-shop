@@ -1,5 +1,5 @@
 .section-menu {
-  width: 100vw;
+  /* width: 100vw; */
   height: 69.6625rem;
   border-bottom: 1px solid var(--borderBlack75);
   @media (width < 480px) {

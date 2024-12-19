@@ -35,6 +35,13 @@
   --borderBlack25: #000000;
 }
 
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+
 * {
   font-family: "Space Mono", sans-serif;
   box-sizing: border-box;

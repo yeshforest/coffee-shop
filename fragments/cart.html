@@ -3,7 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Coffee Shop Cart</title>
+    <!-- 아이폰 가로스크롤 대응 -->
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta
+      content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no"
+      name="viewport"
+    />
     <!-- 초기화 -->
     <link
       rel="stylesheet"
@@ -35,6 +40,7 @@
     />
     <!-- 스타일 -->
     <link rel="stylesheet" href="../css/style.css" />
+    <title>Coffee Shop Cart</title>
   </head>
   <body>
     <header class="header">
@@ -49,7 +55,7 @@
         </button>
         <nav class="header__gnb">
           <ul>
-            <li><a href="index.html">Home</a></li>
+            <li><a href="../index.html">Home</a></li>
             <li><a href="members.html">Members</a></li>
             <li><a href="#">Shop</a></li>
             <li><a href="#">News</a></li>
@@ -81,7 +87,7 @@
           <li class="cart__card">
             <div class="cart__card-header">
               <div class="card-header__left">
-                <input class="card-header__checkbox" type="checkbox" />
+                <input class="card-header__checkbox" type="checkbox" checked />
                 <span class="card-header__product-name">French Roast</span>
               </div>
               <div class="card-header__right">
@@ -106,12 +112,96 @@
               </div>
             </div>
           </li>
-          <li class="cart__card"></li>
-          <li class="cart__card"></li>
-          <li class="cart__card"></li>
+          <li class="cart__card">
+            <div class="cart__card-header">
+              <div class="card-header__left">
+                <input class="card-header__checkbox" type="checkbox" checked />
+                <span class="card-header__product-name">Decaf Espresso</span>
+              </div>
+              <div class="card-header__right">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="cart__card-content">
+              <div class="card-content__left">
+                <img
+                  class="card-content__img"
+                  src="../images/product/product_2.png"
+                  alt="product_1.png"
+                />
+              </div>
+              <div class="card-content__right">
+                <span class="card-content__product-price">$41.00</span>
+                <div class="card-content__product-amount">
+                  <i class="fa-solid fa-minus"></i>
+                  <span>2</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </li>
+          <li class="cart__card">
+            <div class="cart__card-header">
+              <div class="card-header__left">
+                <input class="card-header__checkbox" type="checkbox" />
+                <span class="card-header__product-name">Costa Rica</span>
+              </div>
+              <div class="card-header__right">
+                <i class="fa-solid fa-xmark"></i>
+              </div>
+            </div>
+            <div class="cart__card-content">
+              <div class="card-content__left">
+                <img
+                  class="card-content__img"
+                  src="../images/product/product_3.png"
+                  alt="product_1.png"
+                />
+              </div>
+              <div class="card-content__right">
+                <span class="card-content__product-price">$38.00</span>
+                <div class="card-content__product-amount">
+                  <i class="fa-solid fa-minus"></i>
+                  <span>1</span>
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+              </div>
+            </div>
+          </li>
         </ul>
       </div>
-      <div class="cart-column-right"></div>
+      <div class="cart-column-right">
+        <div class="cart__column-right-top">
+          <div class="cart-destination">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h3 class="destination-text">Destination</h3>
+          </div>
+          <p class="destination-address">
+            30-10, Sanghyeon-ro, Suji-gu, Yongin-si, Gyeonggi-do, Republic of
+            Korea
+          </p>
+        </div>
+        <div class="cart__column-right-btm">
+          <h3 class="payment-title">
+            <i class="fa-solid fa-dollar-sign"></i>
+            <span>Payment</span>
+          </h3>
+          <div class="payment payment-price">
+            <span class="payment-price__text1">Product Price :</span>
+            <span class="payment-price__text2">$118.00</span>
+          </div>
+          <div class="payment payment-delivery">
+            <span class="payment-delivery__text1">Delivery Charge :</span>
+            <span class="payment-delivery__text2">$5.00</span>
+          </div>
+          <hr class="hr-bar" />
+          <div class="payment payment-total">
+            <span class="payment-total__text1">Total :</span>
+            <span class="payment-total__text2">$123.00</span>
+          </div>
+          <button class="payment-btn">Buy Now!</button>
+        </div>
+      </div>
     </section>
     <script
       src="https://kit.fontawesome.com/6a70b9da7a.js"
