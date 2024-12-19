@@ -14,6 +14,7 @@
 @import url(./section-reservation.css);
 @import url(./footer.css);
 @import url(./search.css);
+@import url(./cart.css);
 
 :root {
   --bgBlack: #1d1d1b;
