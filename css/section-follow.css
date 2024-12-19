@@ -28,8 +28,19 @@
     display: block;
     width: 33.2rem;
     border-radius: 1rem;
+    transition: transform 0.2s;
+    &:hover {
+      transition: transform 0.2s;
+      transform: scale(1.1);
+      cursor: pointer;
+    }
   }
-  .grid-image:hover{
+  .grid-image:hover {
+  }
+  .grid-image:hover {
+    animation: rotateAndScale 1s;
+  }
+  .grid-image:hover {
     animation: rotateAndScale 1s;
   }
   @media (width < 480px) {
@@ -44,16 +55,13 @@
     }
   }
 }
-
-
-
 /* 애니메이션 */
-@keyframes rotateAndScale{
-  from{
+@keyframes rotateAndScale {
+  from {
     transform: rotateY(0deg) scale(1);
     /* filter: opacity(1); */
   }
-  to{
+  to {
     transform: rotateY(360deg) scale(1.1);
     /* filter: opacity(0.8); */
   }
