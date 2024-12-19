@@ -15,6 +15,7 @@
 @import url(./footer.css);
 @import url(./search.css);
 @import url(./members.css);
+@import url(./cart.css);
 
 :root {
   --bgBlack: #1d1d1b;
@@ -31,6 +32,7 @@
   --borderBlack100: #707070;
   --borderBlack75: #202020;
   --borderBlack50: #1d1d1b;
+  --borderBlack25: #000000;
 }
 
 * {

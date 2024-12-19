@@ -7,8 +7,8 @@
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr 0.01fr;
 	background-color: var(--bgVanila);
-	border-left: 1px solid black;
-	border-top: 1px solid black;
+	border-left: 1px solid var(--borderBlack25);
+	border-top: 1px solid var(--borderBlack25);
 	/* TODO: border black통일필요 */
 
 	:last-of-type {
@@ -23,8 +23,8 @@
 
 .section-promotion__content {
 	padding: 8.2rem 2.58rem 7.8rem 9.34rem;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-right: 1px solid var(--borderBlack25);
+	border-bottom: 1px solid var(--borderBlack25);
 
 	.section-promotion__content-title {
 		color: var(--fontBlack100);
@@ -37,7 +37,7 @@
 		white-space: pre-line;
 
 		@media (width < 480px) {
-			font-size: 2.4rem;
+			font-size: 3rem;
 		}
 	}
 
@@ -103,8 +103,8 @@
 .section-promotion__product {
 	display: flex;
 	flex-direction: column;
-	border-right: 1px solid black;
-	border-bottom: 1px solid black;
+	border-right: 1px solid var(--borderBlack25);
+	border-bottom: 1px solid var(--borderBlack25);
 
 	img {
 		align-self: center;
@@ -164,7 +164,7 @@
 		text-transform: capitalize;
 
 		@media (width < 480px) {
-			font-size: 3.6rem;
+			font-size: 3rem;
 			letter-spacing: 0rem;
 			line-height: 150%;
 		}
@@ -173,6 +173,5 @@
 	@media (width < 480px) {
 		width: 100%;
 		height: 18rem;
-		font-size: 2.4rem;
 	}
 }

@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1">
   <title>Coffee Shop</title>
   <!-- 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
@@ -42,10 +42,10 @@
       </button>
       <nav class="header__gnb">
         <ul>
-          <li><a href="./index.html">Home</a></li>
-          <li><a href="./members.html">Members</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="members.html">Members</a></li>
           <li><a href="#">Shop</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="./fragments/cart.html">News</a></li>
         </ul>
       </nav>
       <h1 class="header__logo">
@@ -56,12 +56,12 @@
 
       <div class="header__utillity">
         <div class="header__utillity_inner">
-          <button type="button" class="btn-cart">
+          <a href="" class="btn-cart">
             <span class="a11y-hidden">cart</span>cart (0)
-          </button>
-          <button type="button" class="btn-search">
+          </a>
+          <a href="" class="btn-search">
             <span class="a11y-hidden">search</span>search
-          </button>
+          </a>
         </div>
         <button type="button" class="btn-open-side-area">
           <span class="a11y-hidden">open side area</span>
@@ -556,9 +556,10 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__brand">
-        <a href="#">
-          <img class="footer__underline" src="./images/footer/footer-logo.png" alt="" />
-        </a>
+        <div class="footer__logo">
+          <img src="./images/footer/footer-logo.png" alt="로고">
+          <img class="footer__logo-underline" src="./images/underline.svg" alt="밑줄">
+        </div>
         <div class="footer__contact">
           <h2 class="footer__title">Early Birds</h2>
           <ul class="footer__information">

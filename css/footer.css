@@ -2,6 +2,7 @@
   padding: 6.8rem 7rem;
   border-top: 1px solid var(--borderBlack50);
 }
+/* 전체 플렉스박스 */
 .footer__container {
   display: flex;
   justify-content: space-between;
@@ -15,14 +16,44 @@
     flex-direction: column;
   }
 }
-
+/* footer__brand */
 .footer__brand {
+  /* border: 1px solid #000; */
   display: flex;
+  align-items: center;
   gap: 3.6rem;
 }
+
+.footer__logo {
+  position: relative;
+  :first-of-type{
+    width: 10.3rem;
+    height: 10.2rem;
+  }
+}
+.footer__logo-underline {
+  position: absolute;
+  bottom: 0.6rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 11.5rem;
+  height: 0.5rem;
+}
+
+.footer__title {
+  color: var(--fontBlack100);
+  font-family: var(--titleFont);
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 3.8571rem;
+  letter-spacing: 0.06rem;
+  text-transform: uppercase;
+}
+/* ///footer__brand */
+
 .footer__mypage {
-  width: 41.5rem;
-  padding-right: 31.7rem;
+  /* width: 41.5rem; */
+  /* padding-right: 31.7rem; */
   @media (width < 480px) {
     display: flex;
     justify-content: space-between;
@@ -39,33 +70,6 @@
   }
 }
 
-.footer__logo {
-  position: relative;
-  width: 10.3rem;
-  height: 10.2rem;
-  &::after {
-    content: '';
-    display: block;
-    width: 11.5rem;
-    height: 0.5rem;
-    background: url('../images/underline.svg') no-repeat;
-    position: absolute;
-    background-size: cover;
-    bottom: -1rem;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-}
-
-.footer__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
-  font-size: 3rem;
-  font-weight: 400;
-  line-height: 3.8571rem;
-  letter-spacing: 0.06rem;
-  text-transform: uppercase;
-}
 .footer__information li a,
 .footer__mypage li a,
 .footer__sns li a {
@@ -89,6 +93,9 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+  @media (width < 480px) {
+    display: none;
+  }
 }
 .footer__mypage li a::after {
   content: '';
@@ -114,7 +121,7 @@
   transform: translateX(-50%);
 }
 
-.footer__sns-icon{
+.footer__sns-icon {
   display: none;
   @media (width < 480px) {
     display: flex;
