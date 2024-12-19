@@ -1,176 +1,182 @@
 .header {
-  display: inline-flex;
-  flex-direction: column;
-  position: absolute;
-  inset: 0 0 auto 0;
-  z-index: 1000;
+	display: inline-flex;
+	flex-direction: column;
+	position: absolute;
+	inset: 0 0 auto 0;
+	z-index: 1000;
 }
 
 .header__announce-bar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 4rem;
-  padding: 1rem;
-  margin: 0 auto;
-  color: var(--fontWhite);
-  width: 100vw;
-  background-color: var(--bgBlack);
-  font-size: 1.4rem;
-  line-height: 1.4rem;
-  text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 4rem;
+	padding: 1rem;
+	margin: 0 auto;
+	color: var(--fontWhite);
+	width: 100vw;
+	background-color: var(--bgBlack);
+	font-size: 1.4rem;
+	line-height: 1.4rem;
+	text-align: center;
 }
 
 .header__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  align-items: center;
-  justify-content: center;
-  height: 10rem;
-  border-bottom: 1px solid var(--borderBlack100);
-  background-color: var(--bgWhite100);
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	align-items: center;
+	justify-content: center;
+	height: 10rem;
+	border-bottom: 1px solid var(--borderBlack100);
+	background-color: var(--bgWhite100);
 
-  @media (width < 480px) {
-    grid-template-columns: 1fr min-content;
-    padding-inline: 2.4rem 0.8rem;
-    height: 5rem;
-  }
+	@media (width < 480px) {
+		grid-template-columns: 1fr min-content;
+		padding-inline: 2.4rem 0.8rem;
+		height: 5rem;
+	}
 }
 
 .header__gnb {
-  ul {
-    display: flex;
-    gap: 4.7rem;
-    margin-left: 4rem;
-  }
+	ul {
+		display: flex;
+		gap: 4.7rem;
+		margin-left: 4rem;
+	}
 
-  a {
-    color: var(--fontBlack100);
-    font-size: 1.7rem;
-    line-height: 2.4rem;
-    position: relative;
-    text-decoration: none;
+	a {
+		color: var(--fontBlack100);
+		font-size: 1.7rem;
+		line-height: 2.4rem;
+		position: relative;
+		text-decoration: none;
 
-    /*Hover시 언더라인 나오게*/
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 5.3625rem;
-      height: 0.4797rem;
-      background: url(../images/underline.svg) no-repeat;
-      position: absolute;
-      background-size: cover;
-      bottom: -0.4rem;
-      left: 0;
-    }
-  }
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5.3625rem;
+			height: 0.4797rem;
+			background: url(../images/underline.svg) no-repeat;
+			position: absolute;
+			background-size: cover;
+			bottom: -0.4rem;
+			left: 0;
+		}
+	}
 
-  li:nth-child(2) a::after {
-    left: 1.4rem;
-    width: 6.4031rem;
-  }
+	li:nth-child(2) a::after {
+		left: 1.4rem;
+		width: 6.4031rem;
+	}
 
-  @media (width <480px) {
-    display: none;
-  }
+	@media (width <480px) {
+		display: none;
+	}
 }
 
 .header__gnb__btn-menu {
-  display: none;
+	display: none;
 
-  @media (width < 480px) {
-    content: "";
-    display: inline-block;
-    background: url(../images/header/ico_menu.svg);
-    position: absolute;
-    width: 2.4rem;
-    height: 2.4rem;
-    top: 5rem;
-    left: 0.8rem;
-  }
+	@media (width < 480px) {
+		content: "";
+		display: inline-block;
+		background: url(../images/header/ico_menu.svg);
+		position: absolute;
+		width: 2.4rem;
+		height: 2.4rem;
+		top: 5rem;
+		left: 0.8rem;
+	}
 }
 
 .header__logo {
-  text-align: center;
+	text-align: center;
 
-  @media (width < 480px) {
-    justify-self: center;
-  }
+	@media (width < 480px) {
+		justify-self: center;
+	}
 }
 
 .header__utillity {
-  display: flex;
-  align-items: center;
-  justify-content: end;
-  gap: 3.68rem;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 3.68rem;
 
-  @media (width < 480px) {
-    justify-self: end;
-  }
+	@media (width < 480px) {
+		justify-self: end;
+	}
 }
 
 .header__utillity_inner {
-  display: flex;
-  align-items: center;
-  gap: 2.34rem;
-  white-space: nowrap;
+	display: flex;
+	align-items: center;
+	gap: 2.34rem;
+	white-space: nowrap;
 
-  .btn-cart {
-    position: relative;
 
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 5.3625rem;
-      height: 0.4797rem;
-      background: url(../images/underline.svg) no-repeat;
-      position: absolute;
-      background-size: cover;
-      bottom: -0.4rem;
-      left: 0.8rem;
-    }
-  }
+	.btn-cart {
+		position: relative;
+		text-decoration: none;
+		color: var(--fontBlack100);
+		font-size: 1.7rem;
 
-  .btn-search {
-    position: relative;
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5.3625rem;
+			height: 0.4797rem;
+			background: url(../images/underline.svg) no-repeat;
+			position: absolute;
+			background-size: cover;
+			bottom: -0.4rem;
+			left: 0rem;
+		}
+	}
 
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 5.3625rem;
-      height: 0.4797rem;
-      background: url(../images/underline.svg) no-repeat;
-      position: absolute;
-      background-size: cover;
-      bottom: -0.4rem;
-      left: 0.3rem;
-    }
-  }
+	.btn-search {
+		position: relative;
+		text-decoration: none;
+		color: var(--fontBlack100);
+		font-size: 1.7rem;
 
-  @media (width <480px) {
-    display: none;
-  }
+		&::after {
+			content: "";
+			display: inline-block;
+			width: 5.3625rem;
+			height: 0.4797rem;
+			background: url(../images/underline.svg) no-repeat;
+			position: absolute;
+			background-size: cover;
+			bottom: -0.4rem;
+			left: 0.3rem;
+		}
+	}
+
+	@media (width <480px) {
+		display: none;
+	}
 }
 
 .btn-open-side-area {
-  padding: 1.95rem 2.2rem;
-  border-left: 1px solid var(--borderBlack50);
+	padding: 1.95rem 2.2rem;
+	border-left: 1px solid var(--borderBlack50);
 
-  &::after {
-    content: "";
-    display: inline-block;
-    width: 5.45rem;
-    height: 5.8rem;
-    background: url(../images/header/ico_star.svg) no-repeat;
-  }
+	&::after {
+		content: "";
+		display: inline-block;
+		width: 5.45rem;
+		height: 5.8rem;
+		background: url(../images/header/ico_star.svg) no-repeat;
+	}
 
-  @media (width <480px) {
-    padding: 0.7rem 0.5rem;
+	@media (width <480px) {
+		padding: 0.7rem 0.5rem;
 
-    &::after {
-      width: 2.7rem;
-      height: 2.9rem;
-      background-size: cover;
-    }
-  }
+		&::after {
+			width: 2.7rem;
+			height: 2.9rem;
+			background-size: cover;
+		}
+	}
 }
