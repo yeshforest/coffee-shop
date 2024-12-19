@@ -84,7 +84,6 @@
     position: absolute;
     width: 2.4rem;
     height: 2.4rem;
-    top: 5rem;
     left: 0.8rem;
   }
 }
@@ -94,6 +93,8 @@
 
   @media (width < 480px) {
     justify-self: center;
+    align-self: center;
+    padding-top: 1rem;
   }
 }
 
