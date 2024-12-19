@@ -1,4 +1,4 @@
-# coffee-shop
+<img src="https://capsule-render.vercel.app/api?type=waving&color=auto&height=140&section=header&text=Coffee-Shop☕️&fontSize=80" />
 🧑🏻‍💻GitPage QRcode📱<br><br>
 <img src="/images/readme/Est_team1_coffee-shop.jpg"  width="200" height="200"/>
 
@@ -71,15 +71,13 @@ https://github.com/est-firstTeam/coffee-shop
 </ol>
 
 ## 2. 프로젝트 팀 구성 및 역할
+<img src="/images/readme/team_role.png" width=70%/>
+<br>
 
 ## 3. 프로젝트 수행 절차 및 방법
+<img src="/images/readme/project_method.png" width=70%/>
+<br>
 
 ## 4. 프로젝트 수행경과
 
 ## 5. 자체 평가 의견
-
-
-
-
-
-Estsoft 1차 프로젝트
