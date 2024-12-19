@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+  <!-- 초기화 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
+  <!-- 글씨체 -->
+  <!-- space mono -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- anton -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- Mansalva -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Anton&family=Mansalva&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <!-- 스타일 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+  <link rel="stylesheet" href="../css/style.css" />
+  <title>Early Birds Members Page</title>
+</head>
+
+<body>
+  <header class="header">
+    <p class="header__announce-bar">
+      Welcome to Early Birds. We ship every Tuesday and Thursday. Free
+      shipping above €25 in The Netherlands.
+    </p>
+    <div class="header__container">
+      <h2 class="a11y-hidden">메뉴</h2>
+      <button 
+			id="gnb-btn"
+			onclick="document.getElementById('gnb-btn').classList.toggle('open')"
+			class="header__gnb__btn-menu">
+        <span class="a11y-hidden">메뉴 버튼</span>
+      </button>
+      <nav class="header__gnb">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./members.html">Members</a></li>
+          <li><a href="../index.html">Shop</a></li>
+          <li><a href="../index.html">News</a></li>
+        </ul>
+      </nav>
+      <h1 class="header__logo">
+        <a href="../index.html">
+          <img src="../images/header/logo.png" alt="early birds coffee" />
+        </a>
+      </h1>
+
+      <div class="header__utillity">
+        <div class="header__utillity_inner">
+          <a href="./cart.html" class="btn-cart">
+            <span class="a11y-hidden">cart</span>cart (0)
+          </a>
+          <a href="./search.html" class="btn-search">
+            <span class="a11y-hidden">search</span>search
+          </a>
+        </div>
+        <button type="button" class="btn-open-side-area">
+          <span class="a11y-hidden">open side area</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="members-container">
+      <div class="members-title">
+        <span>Members</span>
+      </div>
+      <div class="members-wrapper">
+        <div class="members-card">
+          <img class="members-card__img" src="../images/team/team_1.png" alt="" />
+          <div class="members__text">
+            <h3 class="members__subtext1">Uma Clark</h3>
+            <p class="members__subtext2">Position : Manager</p>
+            <p class="members__subtext2">Email : umaclark@earlybird.com</p>
+            <div class="members__share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="members-card">
+          <img class="members-card__img" src="../images/team/team_2.png" alt="" />
+          <div class="members__text">
+            <h3 class="members__subtext1">Tom Splinder</h3>
+            <p class="members__subtext2">Position : Manager</p>
+            <p class="members__subtext2">Email : tomsplinder@earlybird.com</p>
+            <div class="members__share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="members-card">
+          <img class="members-card__img" src="../images/team/team_3.png" alt="" />
+          <div class="members__text">
+            <h3 class="members__subtext1">Jonas Hanks</h3>
+            <p class="members__subtext2">Position : Pastry Chef</p>
+            <p class="members__subtext2">Email : jonashanks@earlybird.com</p>
+            <div class="members__share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="members-card">
+          <img class="members-card__img" src="../images/team/team_4.png" alt="" />
+          <div class="members__text">
+            <h3 class="members__subtext1">Laura Simons</h3>
+            <p class="members__subtext2">Position : Media manager</p>
+            <p class="members__subtext2">Email : laurasimons@earlybird.com</p>
+            <div class="members__share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="members-card">
+          <img class="members-card__img" src="../images/team/team_5.png" alt="" />
+          <div class="members__text">
+            <h3 class="members__subtext1">Ed Morris</h3>
+            <p class="members__subtext2">Position : Chef</p>
+            <p class="members__subtext2">Email : edmorris@earlybird.com</p>
+            <div class="members__share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+        <div class="members-card">
+          <img class="members-card__img" src="../images/team/team_6.png" alt="" />
+          <div class="members__text">
+            <h3 class="members__subtext1">Rita Flams</h3>
+            <p class="members__subtext2">Position : Sales person</p>
+            <p class="members__subtext2">Email : ritaflams@earlybird.com</p>
+            <div class="members__share">
+              <a href="#" class="fab fa-facebook-f"></a>
+              <a href="#" class="fab fa-twitter"></a>
+              <a href="#" class="fab fa-instagram"></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__brand">
+        <a href="#">
+          <img class="footer__underline" src="./images/footer/footer-logo.png" alt="" />
+        </a>
+        <div class="footer__contact">
+          <h2 class="footer__title">Early Birds</h2>
+          <ul class="footer__information">
+            <li><a href="#">Weteringstraat 48,1017 SP</a></li>
+            <li><a href="#">Amsterdam</a></li>
+            <li><a href="#">Tel:020-7718364</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <ul class="footer__mypage">
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Checkout</a></li>
+        <li><a href="#">Cart</a></li>
+        <li><a href="#">Shop</a></li>
+      </ul>
+
+      <ul class="footer__sns">
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">Instagram</a></li>
+        <li><a href="#">Twitter</a></li>
+      </ul>
+
+      <div class="footer__sns-icon">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-square-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -40,6 +40,13 @@
   box-sizing: border-box;
 }
 
+/* 가로스크롤 대응 */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 /* Normalize */
 button {
   border: none;

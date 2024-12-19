@@ -3,7 +3,8 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
   <!-- 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
   <!-- 글씨체 -->
@@ -26,32 +27,39 @@
 
 <body>
   <header class="header">
+		<p class="header__announce-bar">
+			Welcome to Early Birds. We ship every Tuesday and Thursday. Free
+			shipping above €25 in The Netherlands.
+		</p>
     <div class="header__container">
       <h2 class="a11y-hidden">메뉴</h2>
-      <button class="header__gnb__btn-menu">
+			<button 
+			id="gnb-btn"
+			onclick="document.getElementById('gnb-btn').classList.toggle('open')"
+			class="header__gnb__btn-menu">
         <span class="a11y-hidden">메뉴 버튼</span>
       </button>
       <nav class="header__gnb">
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Members</a></li>
-          <li><a href="#">Shop</a></li>
-          <li><a href="#">News</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../fragments/members.html">Members</a></li>
+          <li><a href="../index.html">Shop</a></li>
+          <li><a href="../index.html">News</a></li>
         </ul>
       </nav>
       <h1 class="header__logo">
-        <a href="">
+        <a href="../index.html">
           <img src="../images/header/logo.png" alt="early birds coffee" />
         </a>
       </h1>
       <div class="header__utillity">
         <div class="header__utillity_inner">
-          <button type="button" class="btn-cart">
+          <a href="./cart.html" class="btn-cart">
             <span class="a11y-hidden">cart</span>cart (0)
-          </button>
-          <button type="button" class="btn-search">
+          </a>
+          <a href="./search.html" class="btn-search">
             <span class="a11y-hidden">search</span>search
-          </button>
+          </a>
         </div>
         <button type="button" class="btn-open-side-area">
           <span class="a11y-hidden">open side area</span>
