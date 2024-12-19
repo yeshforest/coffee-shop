@@ -14,7 +14,7 @@
   padding: 1rem;
   margin: 0 auto;
   color: var(--fontWhite);
-  width: 100vw;
+  /* width: 100vw; */
   background-color: var(--bgBlack);
   font-size: 1.4rem;
   line-height: 1.4rem;

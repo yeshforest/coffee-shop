@@ -35,10 +35,9 @@
   --borderBlack25: #000000;
 }
 
-html {
-  overflow-x: hidden;
-}
+html,
 body {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
