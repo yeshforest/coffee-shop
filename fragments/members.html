@@ -35,7 +35,10 @@
     </p>
     <div class="header__container">
       <h2 class="a11y-hidden">메뉴</h2>
-      <button class="header__gnb__btn-menu">
+      <button 
+			id="gnb-btn"
+			onclick="document.getElementById('gnb-btn').classList.toggle('open')"
+			class="header__gnb__btn-menu">
         <span class="a11y-hidden">메뉴 버튼</span>
       </button>
       <nav class="header__gnb">
