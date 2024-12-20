@@ -35,7 +35,7 @@
     }
 }
 
-.section-client__secondbox {
+.section-school__secondbox {
     @media (width < 480px) {
         display: flex;
         flex-direction: column;
@@ -62,8 +62,9 @@
 
 }
 
-.section-client__text {
+.section-school__text {
     color: var(--fontBlack100);
+		font-family: var(--mainFont);
     font-size: 1.8rem;
     line-height: 2.4rem;
     margin-right: 12.59rem;

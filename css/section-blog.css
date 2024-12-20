@@ -104,6 +104,7 @@
 
 .section-blog__content1 .section-blog__underline1 {
     position: relative;
+    font-family: var(--mainFont);
 
     &::after {
         content: "";
@@ -124,6 +125,7 @@
 
 .section-blog__content1 .section-blog__underline2 {
     position: relative;
+    font-family: var(--mainFont);
 
     &::after {
         content: "";
