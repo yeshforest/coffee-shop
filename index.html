@@ -6,28 +6,23 @@
   <!-- 아이폰 가로스크롤 대응 -->
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
-  <title>Coffee Shop</title>
+	<meta name="description" content="early birds coffee shop main page">
   <!-- 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
   <!-- 글씨체 -->
   <!-- space mono -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- anton -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <!-- Mansalva -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Mansalva&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- 스타일 -->
   <link rel="stylesheet" href="./css/style.css" />
+	<title>Coffee Shop</title>
 </head>
 
 <body>
@@ -38,12 +33,12 @@
       shipping above €25 in The Netherlands.
     </p>
     <div class="header__container">
-      <h2 class="a11y-hidden">메뉴</h2>
+      <h2 class="a11y-hidden">menu</h2>
       <button 
 			id="gnb-btn"
 			onclick="document.getElementById('gnb-btn').classList.toggle('open')"
 			class="header__gnb__btn-menu">
-        <span class="a11y-hidden">메뉴 버튼</span>
+        <span class="a11y-hidden">menu button</span>
       </button>
       <nav class="header__gnb">
         <ul>
@@ -62,10 +57,10 @@
       <div class="header__utillity">
         <div class="header__utillity_inner">
           <a href="./fragments/cart.html" class="btn-cart">
-            <span class="a11y-hidden">cart</span>cart (0)
+            cart (0)
           </a>
           <a href="./fragments/search.html" class="btn-search">
-            <span class="a11y-hidden">search</span>search
+            search
           </a>
         </div>
         <button type="button" class="btn-open-side-area">
@@ -76,14 +71,14 @@
   </header>
   <main>
     <section class="section-slide">
-      <h2 class="a11y-hidden">슬라이드</h2>
+      <h2 class="a11y-hidden">slide</h2>
       <div class="section-slide__left-side">
-        <img src="./images/slider/@slider-home.png" />
+        <img src="./images/slider/@slider-home.png" alt="slider home image"/>
       </div>
 
       <div class="section-slide__right-side">
         <h3 class="section-slide__title">enjoy<br />life sip<br />by sip</h3>
-        <img class="section-slide__img-bg" src="./images/bg.png" />
+        <img class="section-slide__img-bg" src="./images/bg.png" alt="slide background image"/>
       </div>
 
       <button class="btn-prev" type="button">
@@ -100,12 +95,11 @@
     </section>
 
     <section class="section-promotion">
-      <h2 class="a11y-hidden">프로모션</h2>
+      <h2 class="a11y-hidden">promotion</h2>
       <div class="section-promotion__product-container">
         <div class="section-promotion__content">
           <h3 class="section-promotion__content-title">
-            Our blends deliver on the promise of<br />balance and
-            consistency,<span>roasted to</span><br />maximize sweetness.
+            Our blends deliver on the promise of<br />balance and consistency,<span>roasted to</span><br />maximize sweetness.
           </h3>
           <p class="section-promotion__content-description">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
@@ -115,13 +109,13 @@
         </div>
 
         <div class="section-promotion__product">
-          <img src="./images/promotion/@promotion_1.png" />
+          <img src="./images/promotion/@promotion_1.png" alt="promotion image 1"/>
           <h4 class="section-promotion__product-title">Arabica Bekele</h4>
           <span class="price">$44.00</span>
         </div>
 
         <div class="section-promotion__product">
-          <img src="./images/promotion/@promotion_2.png" />
+          <img src="./images/promotion/@promotion_2.png" alt="promotion image 2"/>
           <h4 class="section-promotion__product-title">Robusta santa</h4>
           <span class="price">$35.00</span>
         </div>
@@ -130,25 +124,23 @@
       </div>
 
       <div class="section-promotion__banner">
-        <img src="./images/promotion/@promotion.png" />
+        <img src="./images/promotion/@promotion.png" alt="promotion banner image"/>
         <strong>more than just a coffee<br />shop</strong>
       </div>
     </section>
     <section class="section-review">
-      <h2 class="a11y-hidden">리뷰</h2>
+      <h2 class="a11y-hidden">review</h2>
       <div class="section-review__container">
         <div class="section-review__rating">
-          <img class="section-review__star" src="./images/review/ico_review-star.svg" />
-          <img class="section-review__star" src="./images/review/ico_review-star.svg" />
-          <img class="section-review__star" src="./images/review/ico_review-star.svg" />
-          <img class="section-review__star" src="./images/review/ico_review-star.svg" />
-          <img class="section-review__star" src="./images/review/ico_review-star.svg" />
-          <img class="section-review__star" src="./images/review/ico_review-star.svg" />
+          <img class="section-review__star" src="./images/review/ico_review-star.svg" alt="review star 1"/>
+          <img class="section-review__star" src="./images/review/ico_review-star.svg"  alt="review star 2"/>
+          <img class="section-review__star" src="./images/review/ico_review-star.svg"  alt="review star 3"/>
+          <img class="section-review__star" src="./images/review/ico_review-star.svg"  alt="review star 4"/>
+          <img class="section-review__star" src="./images/review/ico_review-star.svg"  alt="review star 5"/>
         </div>
 
         <h3 class="section-review__content">
-          "Another reason people just can't keep away from<br />their local
-          coffee shop is the quality of coffee<br />that's on offer. "
+          "Another reason people just can't keep away from<br />their local coffee shop is the quality of coffee<br />that's on offer. "
         </h3>
         <span class="section-review__name">Henry Monro</span>
         <ul class="section-review__pagination-indicator">
@@ -169,19 +161,19 @@
           </li>
         </ul>
       </div>
-      <img class="section-review__thumbnail" src="./images/review/@review.png" />
+      <img class="section-review__thumbnail" src="./images/review/@review.png"  alt="review image"/>
     </section>
     <!-- 혜림까지 -->
     <!-- 동욱 -->
     <section class="section-branch">
-      <h2 class="a11y-hidden">지점</h2>
+      <h2 class="a11y-hidden">coffee shop branch</h2>
       <div class="branch-container">
         <div class="branch-name"><a href="#">Lisbon Coffee Salon</a></div>
         <div class="branch-name"><a href="#">Berlin Coffee Roastery</a></div>
         <div class="branch-name"><a href="#">Amsterdam Coffee Shop</a></div>
         <div class="branch-detail">
           <div class="branch-detail__left-column">
-            <img src="./images/branch/@branch.png" alt="@branch.png" />
+            <img src="./images/branch/@branch.png" alt="branch image" />
           </div>
           <div class="branch-detail__right-column">
             <h3 class="branch-detail-text branch-detail__title">
@@ -200,28 +192,28 @@
       </div>
     </section>
     <section class="section-product" id="section-product">
-      <h2 class="a11y-hidden">제품</h2>
+      <h2 class="a11y-hidden">our products</h2>
       <h3 class="product-title">The Coffee that's right for you</h3>
       <div class="product-container">
         <ul class="product-cards">
           <li class="card">
-            <img class="product-card__img" src="./images/product/product_1.png" alt="" />
+            <img class="product-card__img" src="./images/product/product_1.png" alt="product image 1" />
             <h4 class="product-card__name">French Roast</h4>
             <span class="product-card__price">$37.00</span>
           </li>
           <li class="card">
-            <img class="product-card__img" src="./images/product/product_2.png" alt="" />
+            <img class="product-card__img" src="./images/product/product_2.png" alt="product image 2"/>
             <h4 class="product-card__name">Decaf Espresso</h4>
             <span class="product-card__price">$41.00</span>
             <span class="product-card__bedge-new">new</span>
           </li>
           <li class="card">
-            <img class="product-card__img" src="./images/product/product_3.png" alt="" />
+            <img class="product-card__img" src="./images/product/product_3.png" alt="product image 3" />
             <h4 class="product-card__name">Costa Rica</h4>
             <span class="product-card__price">$38.00</span>
           </li>
           <li class="card">
-            <img class="product-card__img" src="./images/product/product_4.png" alt="" />
+            <img class="product-card__img" src="./images/product/product_4.png" alt="product image 4" />
             <h4 class="product-card__name">Decaf French Roast</h4>
             <span class="product-card__price">$45.00</span>
             <span class="product-card__bedge-sold">sold</span>
@@ -230,17 +222,18 @@
       </div>
     </section>
     <section class="section-slogan">
-      <h2 class="a11y-hidden">슬로건</h2>
+      <h2 class="a11y-hidden">slogan</h2>
       <div class="slogen-wrapper">
         <div class="slogen__column-left">
           <div class="slogen-title-wrapper">
             <p class="slogen-title">
               swing by our place<br />we also have food.
-              <img class="text-cover1" src="./images/text-cover1.png" alt="text-cover1.png" />
+              <img class="text-cover1" src="./images/text-cover1.png" alt="text-cover1 image" />
             </p>
           </div>
-          <img class="slogen-img" src="./images/slogan/menu-food.png" alt="menu-food.png" />
+          <img class="slogen-img" src="./images/slogan/menu-food.png" alt="menu-food image" />
         </div>
+				<h3 class="a11y-hidden">slogan card lists</h3>
         <div class="slogen__column-right">
           <div class="slogen-cards">
             <div class="slogen-card">
@@ -272,7 +265,7 @@
       </div>
     </section>
     <section class="section-reservation">
-      <h2 class="a11y-hidden">예약</h2>
+      <h2 class="a11y-hidden">reservation</h2>
       <h3 class="reservation-title">Reserve Your Table</h3>
       <div class="reservation-wrapper">
         <select class="reservation-select" name="" id="">
@@ -290,46 +283,46 @@
     <!-- 동욱까지 -->
     <!-- 준영 -->
     <section class="section-team">
-      <h2 class="a11y-hidden">팀</h2>
+      <h2 class="a11y-hidden">team</h2>
       <h2 class="section-team__title">Our Awesome Team</h2>
       <div class="section-team__container">
         <div class="section-team__box">
-          <img class="section-team__img" src="./images/team/team_1.png" alt="" />
+          <img class="section-team__img" src="./images/team/team_1.png" alt="team member 1 image" />
           <div class="section-team__text">
             <h3 class="section-team__subtext1">Uma Clark</h3>
             <p class="section-team__subtext2">Manager</p>
           </div>
         </div>
         <div class="section-team__box">
-          <img class="section-team__img" src="./images/team/team_2.png" alt="" />
+          <img class="section-team__img" src="./images/team/team_2.png" alt="team member 2 image" />
           <div class="section-team__text">
             <h3 class="section-team__subtext1">Tom Splinder</h3>
             <p class="section-team__subtext2">Manager</p>
           </div>
         </div>
         <div class="section-team__box">
-          <img class="section-team__img" src="./images/team/team_3.png" alt="" />
+          <img class="section-team__img" src="./images/team/team_3.png" alt="team member 3 image" />
           <div class="section-team__textbox">
             <h3 class="section-team__subtext1">Jonas Hanks</h3>
             <p class="section-team__subtext2">Pastry Chef</p>
           </div>
         </div>
         <div class="section-team__box">
-          <img class="section-team__img" src="./images/team/team_4.png" alt="" />
+          <img class="section-team__img" src="./images/team/team_4.png" alt="team member 4 image" />
           <div class="section-team__text">
             <h3 class="section-team__subtext1">Laura Simons</h3>
             <p class="section-team__subtext2">Media manager</p>
           </div>
         </div>
         <div class="section-team__box">
-          <img class="section-team__img" src="./images/team/team_5.png" alt="" />
+          <img class="section-team__img" src="./images/team/team_5.png" alt="team member 5 image" />
           <div class="section-team__text">
             <h3 class="section-team__subtext1">Ed Morris</h3>
             <p class="section-team__subtext2">Chef</p>
           </div>
         </div>
         <div class="section-team__box">
-          <img class="section-team__img" src="./images/team/team_6.png" alt="" />
+          <img class="section-team__img" src="./images/team/team_6.png" alt="team member 6 image" />
           <div class="section-team__text">
             <h3 class="section-team__subtext1">Rita Flams</h3>
             <p class="section-team__subtext2">Sales person</p>
@@ -338,19 +331,19 @@
       </div>
     </section>
     <section class="section-blog" id="section-blog">
-      <h2 class="a11y-hidden">블로그</h2>
+      <h2 class="a11y-hidden">blog</h2>
       <div class="sectioin-blog__container">
         <div class="section-blog__left">
           <h2 class="section-blog__title">
             Recent blog posts Explore now
-            <img class="section-blog__text-cover" src="./images/text-cover1.png" alt="section-blog__text-cover.png" />
+            <img class="section-blog__text-cover" src="./images/text-cover1.png" alt="blog text cover image" />
           </h2>
           <button class="section-blog__btn">read all news</button>
         </div>
         <div class="section-blog__right">
           <div class="section-blog__content">
             <div class="section-blog__imagebox">
-              <img src="./images/blog/blog_1.png" alt="" />
+              <img src="./images/blog/blog_1.png" alt="blog image 1" />
             </div>
             <div class="section-blog__contentbox">
               <p class="section-blog__content1">
@@ -366,7 +359,7 @@
           </div>
           <div class="section-blog__content">
             <div class="section-blog__imagebox">
-              <img src="./images/blog/blog_2.png" alt="" />
+              <img src="./images/blog/blog_2.png" alt="blog image 2" />
             </div>
             <div class="section-blog__contentbox">
               <p class="section-blog__content1">
@@ -382,7 +375,7 @@
           </div>
           <div class="section-blog__content">
             <div class="section-blog__imagebox">
-              <img src="./images/blog/blog_3.png" alt="" />
+              <img src="./images/blog/blog_3.png" alt="blog image 3" />
             </div>
             <div class="section-blog__contentbox">
               <p class="section-blog__content1">
@@ -398,7 +391,7 @@
           </div>
           <div class="section-blog__content">
             <div class="section-blog__imagebox">
-              <img src="./images/blog/blog_4.png" alt="" />
+              <img src="./images/blog/blog_4.png"  alt="blog image 4" />
             </div>
             <div class="section-blog__contentbox">
               <p class="section-blog__content1">
@@ -414,7 +407,7 @@
           </div>
           <div class="section-blog__content">
             <div class="section-blog__imagebox">
-              <img src="./images/blog/blog_5.png" alt="" />
+              <img src="./images/blog/blog_5.png"  alt="blog image 5" />
             </div>
             <div class="section-blog__contentbox">
               <p class="section-blog__content1">
@@ -430,7 +423,7 @@
           </div>
           <div class="section-blog__content">
             <div class="section-blog__imagebox">
-              <img src="./images/blog/blog_6.png" alt="" />
+              <img src="./images/blog/blog_6.png"  alt="blog image 6" />
             </div>
             <div class="section-blog__contentbox">
               <p class="section-blog__content1">
@@ -448,9 +441,10 @@
       </div>
     </section>
     <section class="section-school">
+			<h2 class="a11y-hidden">school</h2>
       <div class="section-school__box">
         <div class="section-school__image">
-          <img src="./images/school/@school.png" alt="" />
+          <img src="./images/school/@school.png"  alt="school image" />
         </div>
         <div class="section-client__secondbox">
           <h2 class="section-school__title">Barista Schools & Careers</h2>
@@ -464,23 +458,23 @@
       </div>
     </section>
     <section class="section-client">
-      <h2 class="a11y-hidden">고객</h2>
+      <h2 class="a11y-hidden">client</h2>
       <h2 class="section-client__title">Our trusted Supplies</h2>
       <div class="section-client__container">
         <div class="section-client__box">
-          <img class="section-client__img" src="./images/client/client_1.png" alt="" />
+          <img class="section-client__img" src="./images/client/client_1.png" alt="client image 1" />
         </div>
         <div class="section-client__box">
-          <img class="section-client__img" src="./images/client/client_2.png" alt="" />
+          <img class="section-client__img" src="./images/client/client_2.png" alt="client image 2" />
         </div>
         <div class="section-client__box">
-          <img class="section-client__img" src="./images/client/client_3.png" alt="" />
+          <img class="section-client__img" src="./images/client/client_3.png" alt="client image 3" />
         </div>
         <div class="section-client__box">
-          <img class="section-client__img" src="./images/client/client_4.png" alt="" />
+          <img class="section-client__img" src="./images/client/client_4.png" alt="client image 4" />
         </div>
         <div class="section-client__box">
-          <img class="section-client__img" src="./images/client/client_5.png" alt="" />
+          <img class="section-client__img" src="./images/client/client_5.png" alt="client image 5" />
         </div>
       </div>
     </section>
@@ -489,7 +483,7 @@
     <!-- 찬미 -->
     <!-- section-menu -->
     <section class="section-menu">
-      <h2 class="a11y-hidden">커피메뉴</h2>
+      <h2 class="a11y-hidden">coffee menu</h2>
       <div class="section-menu__container">
         <h3 class="section-menu__hidden-title">Our<br />Coffee</h3>
         <ul class="section-menu__menubox">
@@ -540,19 +534,19 @@
 
     <!-- section-follow -->
     <section class="section-follow">
-      <h2 class="a11y-hidden">팔로워</h2>
+      <h2 class="a11y-hidden">follower</h2>
       <h3 class="section-follow__title">Follow Us For More</h3>
       <div class="section-follow__grid-container">
-        <img class="grid-image" src="./images/follow/follow_1.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_2.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_3.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_4.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_5.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_6.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_7.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_8.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_9.png" alt="" />
-        <img class="grid-image" src="./images/follow/follow_10.png" alt="" />
+        <img class="grid-image" src="./images/follow/follow_1.png" alt="follower image 1" />
+        <img class="grid-image" src="./images/follow/follow_2.png" alt="follwer image 2" />
+        <img class="grid-image" src="./images/follow/follow_3.png" alt="follwer image 3" />
+        <img class="grid-image" src="./images/follow/follow_4.png" alt="follwer image 4" />
+        <img class="grid-image" src="./images/follow/follow_5.png" alt="follwer image 5" />
+        <img class="grid-image" src="./images/follow/follow_6.png" alt="follwer image 6" />
+        <img class="grid-image" src="./images/follow/follow_7.png" alt="follwer image 7" />
+        <img class="grid-image" src="./images/follow/follow_8.png" alt="follwer image 8" />
+        <img class="grid-image" src="./images/follow/follow_9.png" alt="follwer image 9" />
+        <img class="grid-image" src="./images/follow/follow_10.png" alt="follwer image 10" />
       </div>
     </section>
   </main>
@@ -560,10 +554,11 @@
   <!-- footer -->
   <footer class="footer">
     <div class="footer__container">
+			<h2 class="a11y-hidden">site info</h2>
       <div class="footer__brand">
         <div class="footer__logo">
-          <img src="./images/footer/footer-logo.png" alt="로고" />
-          <img class="footer__logo-underline" src="./images/underline.svg" alt="밑줄" />
+          <img src="./images/footer/footer-logo.png" alt="footer logo" />
+          <img class="footer__logo-underline" src="./images/underline.svg" alt="logo underline" />
         </div>
         <div class="footer__contact">
           <h2 class="footer__title">Early Birds</h2>

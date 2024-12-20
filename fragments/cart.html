@@ -5,21 +5,18 @@
   <meta charset="UTF-8" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta
+  name="description"
+  content="early birds coffee shop cart page. it has shopping cart list.">
   <!-- 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
   <!-- 글씨체 -->
   <!-- space mono -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- anton -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <!-- Mansalva -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Mansalva&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
   <!-- fontawesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
@@ -36,12 +33,12 @@
       shipping above €25 in The Netherlands.
     </p>
     <div class="header__container">
-      <h2 class="a11y-hidden">메뉴</h2>
+      <h2 class="a11y-hidden">menu</h2>
       <button 
 			id="gnb-btn"
 			onclick="document.getElementById('gnb-btn').classList.toggle('open')"
 			class="header__gnb__btn-menu">
-        <span class="a11y-hidden">메뉴 버튼</span>
+        <span class="a11y-hidden">menu button</span>
       </button>
       <nav class="header__gnb">
         <ul>
@@ -72,6 +69,7 @@
     </div>
   </header>
   <section class="cart-container">
+		<h2 class="a11y-hidden">cart</h2>
     <div class="cart-column-left">
       <ul class="cart__cards">
         <li class="cart__card">
@@ -86,7 +84,7 @@
           </div>
           <div class="cart__card-content">
             <div class="card-content__left">
-              <img class="card-content__img" src="../images/product/product_1.png" alt="product_1.png" />
+              <img class="card-content__img" src="../images/product/product_1.png" alt="product 1 image" />
             </div>
             <div class="card-content__right">
               <span class="card-content__product-price">$37.00</span>
@@ -110,7 +108,7 @@
           </div>
           <div class="cart__card-content">
             <div class="card-content__left">
-              <img class="card-content__img" src="../images/product/product_2.png" alt="product_1.png" />
+              <img class="card-content__img" src="../images/product/product_2.png" alt="product 2 image" />
             </div>
             <div class="card-content__right">
               <span class="card-content__product-price">$41.00</span>
@@ -134,7 +132,7 @@
           </div>
           <div class="cart__card-content">
             <div class="card-content__left">
-              <img class="card-content__img" src="../images/product/product_3.png" alt="product_1.png" />
+              <img class="card-content__img" src="../images/product/product_3.png" alt="product 3 image" />
             </div>
             <div class="card-content__right">
               <span class="card-content__product-price">$38.00</span>
