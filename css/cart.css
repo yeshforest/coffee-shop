@@ -3,7 +3,7 @@
   justify-content: center;
   height: 100vh;
   background: url("../images/bg.png");
-  padding-top: 15rem;
+  padding-top: 16rem;
   gap: 2rem;
   @media (width < 480px) {
     display: flex;
@@ -19,7 +19,7 @@
   border-radius: 1rem;
   background-color: var(--bgWhite50);
   @media (width < 480px) {
-    padding: 2rem 0;
+    padding: 4rem 0;
   }
 }
 
