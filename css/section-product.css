@@ -1,13 +1,13 @@
 .product-title {
   color: var(--fontBlack100);
-  font-family: Anton;
+  font-family: var(--titlefont);
   font-size: 7rem;
-  font-weight: 400;
   line-height: 8rem;
   letter-spacing: -0.14rem;
   text-transform: uppercase;
   padding: 2.4rem 0;
   padding-left: 3.13rem;
+
   @media (width < 1024px) {
     font-size: 2.4rem;
     margin: 0.5rem;
@@ -40,9 +40,8 @@
 
 .product-card__name {
   color: var(--fontBlack100);
-  font-family: Anton;
+  font-family: var(--titlefont);
   font-size: 2.5rem;
-  font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
@@ -52,17 +51,15 @@
 
 .product-card__price {
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+  font-family: var(--mainFont);
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
 }
 
 .product-card__bedge-new,
 .product-card__bedge-sold {
   color: var(--fontBlack100);
-  font-family: Anton;
+  font-family: var(--titlefont);
   font-size: 1.125rem;
   line-height: 1.125rem;
   letter-spacing: 0.01125rem;
