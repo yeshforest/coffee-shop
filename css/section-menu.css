@@ -1,5 +1,4 @@
 .section-menu {
-  /* width: 100vw; */
   height: 69.6625rem;
   border-bottom: 1px solid var(--borderBlack75);
   @media (width < 480px) {
@@ -24,36 +23,37 @@
     margin-bottom: 2.7rem;
   }
   @media (width < 480px) {
+    width: 100%;
     padding: 0;
   }
 }
 .section-menu__item {
   display: flex;
   justify-content: space-between;
-  gap: 45.72rem;
   margin-bottom: 0.2rem;
   @media (width < 480px) {
-    gap: 13rem;
     margin-bottom: 0.5rem;
   }
+  .section-menu__title {
+    color: var(--fontBlack100);
+    font-family: var(--titleFont);
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2.5rem;
+    letter-spacing: 0.08rem;
+    text-transform: uppercase;
+  }
+  .section-menu__price {
+    color: var(--fontBlack100);
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.072rem;
+    text-transform: uppercase;
+  }
 }
-.section-menu__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
-  font-size: 2rem;
-  font-weight: 400;
-  line-height: 2.5rem;
-  letter-spacing: 0.08rem;
-  text-transform: uppercase;
-}
-.section-menu__price {
-  color: var(--fontBlack100);
-  font-size: 1.8rem;
-  font-weight: 400;
-  line-height: 2.4rem;
-  letter-spacing: 0.072rem;
-  text-transform: uppercase;
-}
+
+
 
 .section-menu__description {
   color: var(--fontBlack100);

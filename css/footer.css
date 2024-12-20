@@ -50,8 +50,6 @@
 /* ///footer__brand */
 
 .footer__mypage {
-  /* width: 41.5rem; */
-  /* padding-right: 31.7rem; */
   @media (width < 480px) {
     display: flex;
     justify-content: space-between;
