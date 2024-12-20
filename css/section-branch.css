@@ -4,7 +4,7 @@
 
 .branch-container {
   display: grid;
-  grid-template-columns: repeat(3, 7.49rem) 1fr;
+  grid-template-columns: repeat(3, min-content) 1fr;
 
   @media (width < 1024px) {
     display: flex;
@@ -16,7 +16,8 @@
   border-right: 1px solid var(--borderBlack75);
   display: flex;
   align-items: flex-end;
-  padding-bottom: 3.13rem;
+	padding: 5rem 2rem;
+
 
   @media (width < 1024px) {
     justify-content: center;
@@ -65,8 +66,8 @@
 
 .branch-detail__left-column {
   img {
-    width: 60rem;
-    height: 48.8125rem;
+    width: 78rem;
+    height: 60rem;
     margin-left: 3.75rem;
     object-fit: cover;
 
@@ -131,4 +132,5 @@
   letter-spacing: 0.085rem;
   text-transform: uppercase;
   border: none;
+	background-color: var(--bgBlack);
 }
