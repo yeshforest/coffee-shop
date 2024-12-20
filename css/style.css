@@ -27,17 +27,17 @@
   --bgVanila: #fdf1d9;
   --bgWhite100: #ffffff;
   --bgWhite50: #f8f8f8;
+	--mainFont: "Space Mono", sans-serif;
   --titleFont: "Anton", sans-serif;
   --imgFont: "Mansalva", sans-serif;
   --borderBlack100: #707070;
   --borderBlack75: #202020;
   --borderBlack50: #1d1d1b;
   --borderBlack25: #000000;
-}
+	--memberSharePrimary: #3B5998;
+	--memberShareSecondary: #00ACEE;
+	--memberSharePoint: #DD2A7B;
 
-* {
-  font-family: "Space Mono", sans-serif;
-  box-sizing: border-box;
 }
 
 /* 가로스크롤 대응 */
@@ -46,6 +46,12 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+
+* {
+  font-family: "Space Mono", sans-serif;
+  box-sizing: border-box;
+}
+
 
 /* Normalize */
 button {

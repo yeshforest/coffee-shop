@@ -5,24 +5,24 @@
   <meta charset="UTF-8" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="minimum-scale=1.0, width=device-width, maximum-scale=1, user-scalable=no" name="viewport" />
+	<meta
+  name="description"
+  content="early birds coffee shop members page. member introduce page.">
   <!-- 초기화 -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.2/reset.min.css" />
   <!-- 글씨체 -->
   <!-- space mono -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
   <!-- anton -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
   <!-- Mansalva -->
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Mansalva&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+	integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+	crossorigin="anonymous" referrerpolicy="no-referrer" />
   <!-- 스타일 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-
   <link rel="stylesheet" href="../css/style.css" />
   <title>Early Birds Members Page</title>
 </head>
@@ -34,12 +34,12 @@
       shipping above €25 in The Netherlands.
     </p>
     <div class="header__container">
-      <h2 class="a11y-hidden">메뉴</h2>
+      <h2 class="a11y-hidden">menu</h2>
       <button 
 			id="gnb-btn"
 			onclick="document.getElementById('gnb-btn').classList.toggle('open')"
 			class="header__gnb__btn-menu">
-        <span class="a11y-hidden">메뉴 버튼</span>
+        <span class="a11y-hidden">menu button</span>
       </button>
       <nav class="header__gnb">
         <ul>
@@ -73,12 +73,13 @@
 
   <main>
     <section class="members-container">
+			<h2 class="a11y-hidden">team members</h2>
       <div class="members-title">
         <span>Members</span>
       </div>
       <div class="members-wrapper">
         <div class="members-card">
-          <img class="members-card__img" src="../images/team/team_1.png" alt="" />
+          <img class="members-card__img" src="../images/team/team_1.png" alt="team member 1" />
           <div class="members__text">
             <h3 class="members__subtext1">Uma Clark</h3>
             <p class="members__subtext2">Position : Manager</p>
@@ -91,7 +92,7 @@
           </div>
         </div>
         <div class="members-card">
-          <img class="members-card__img" src="../images/team/team_2.png" alt="" />
+          <img class="members-card__img" src="../images/team/team_2.png" alt="team member 2" />
           <div class="members__text">
             <h3 class="members__subtext1">Tom Splinder</h3>
             <p class="members__subtext2">Position : Manager</p>
@@ -104,7 +105,7 @@
           </div>
         </div>
         <div class="members-card">
-          <img class="members-card__img" src="../images/team/team_3.png" alt="" />
+          <img class="members-card__img" src="../images/team/team_3.png" alt="team member 3" />
           <div class="members__text">
             <h3 class="members__subtext1">Jonas Hanks</h3>
             <p class="members__subtext2">Position : Pastry Chef</p>
@@ -117,7 +118,7 @@
           </div>
         </div>
         <div class="members-card">
-          <img class="members-card__img" src="../images/team/team_4.png" alt="" />
+          <img class="members-card__img" src="../images/team/team_4.png" alt="team member 4" />
           <div class="members__text">
             <h3 class="members__subtext1">Laura Simons</h3>
             <p class="members__subtext2">Position : Media manager</p>
@@ -130,7 +131,7 @@
           </div>
         </div>
         <div class="members-card">
-          <img class="members-card__img" src="../images/team/team_5.png" alt="" />
+          <img class="members-card__img" src="../images/team/team_5.png" alt="team memeber 5" />
           <div class="members__text">
             <h3 class="members__subtext1">Ed Morris</h3>
             <p class="members__subtext2">Position : Chef</p>
@@ -143,7 +144,7 @@
           </div>
         </div>
         <div class="members-card">
-          <img class="members-card__img" src="../images/team/team_6.png" alt="" />
+          <img class="members-card__img" src="../images/team/team_6.png" alt="team member 6" />
           <div class="members__text">
             <h3 class="members__subtext1">Rita Flams</h3>
             <p class="members__subtext2">Position : Sales person</p>
@@ -160,9 +161,10 @@
   </main>
   <footer class="footer">
     <div class="footer__container">
+			<h2 class="a11y-hidden">site info</h2>
       <div class="footer__brand">
         <a href="#">
-          <img class="footer__underline" src="./images/footer/footer-logo.png" alt="" />
+          <img class="footer__underline" src="./images/footer/footer-logo.png" alt="footer logo" />
         </a>
         <div class="footer__contact">
           <h2 class="footer__title">Early Birds</h2>

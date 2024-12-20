@@ -21,9 +21,8 @@
 
     span:first-child {
         color: var(--fontBlack100);
-        font-family: Anton;
+				font-family: var(--titleFont);
         font-size: 7rem;
-        font-weight: 400;
         line-height: 6rem;
         letter-spacing: 0.1rem;
         text-transform: uppercase;
@@ -75,8 +74,8 @@
     display: flex;
     flex-direction: column;
     margin-left: 15rem;
-    background-color: white;
-    border: 1px solid black;
+    background-color: var(--bgWhite);
+    border: 1px solid var(--borderBlack25);
     border-radius: 3rem;
     box-shadow: 5px 5px 20px;
 
@@ -126,15 +125,15 @@
 }
 
 .members__share a:first-child {
-    color: #3B5998;
+    color: var(--memberSharePrimary);
 }
 
 .members__share a:nth-child(2) {
-    color: #00ACEE;
+    color: var(--memberShareSecondary);
 }
 
 .members__share a:last-child {
-    color: #DD2A7B;
+    color: var(--memberSharePoint);
 }
 
 .members__share a:hover {

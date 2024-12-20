@@ -16,9 +16,7 @@
 		top: 2rem;
 		left: 50%;
 		transform: translate(-50%,0);
-
 	}
-
 }
 
 .section-review__container {
@@ -49,7 +47,6 @@
 	@media (width <480px) {
 		margin-top: 18rem; /* 이미지 16 + 공백 2rem */
 	}
-
 }
 
 .section-review__content {
@@ -73,6 +70,7 @@
 
 .section-review__name {
 	color: var(--fontBlack100);
+	font-family: var(--mainFont);
 	text-align: center;
 	font-size: 1.8rem;
 	line-height: 3rem;

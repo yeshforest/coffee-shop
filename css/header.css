@@ -14,11 +14,16 @@
 	padding: 1rem;
 	margin: 0 auto;
 	color: var(--fontWhite);
+	font-family: var(--mainFont);
 	width: 100%;
 	background-color: var(--bgBlack);
 	font-size: 1.4rem;
 	line-height: 1.4rem;
 	text-align: center;
+
+	@media (width < 480px) {
+		font-size: 1.1rem;
+	}
 }
 
 .header__container {
@@ -50,6 +55,7 @@
 		line-height: 2.4rem;
 		position: relative;
 		text-decoration: none;
+		font-family: var(--mainFont);
 
 		&::after {
 			content: "";
@@ -141,6 +147,7 @@
 				align-items: center;
 				width: 100%;
 				height: 3rem;
+				font-family: var(--mainFont);
 
 				&::after {
 					content: "";
@@ -169,6 +176,7 @@
 	align-items: center;
 	justify-content: end;
 	gap: 3.68rem;
+	font-family: var(--mainFont);
 
 	@media (width < 480px) {
 		justify-self: end;
