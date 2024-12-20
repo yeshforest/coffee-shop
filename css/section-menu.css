@@ -64,6 +64,7 @@
 
 .section-menu__description {
   color: var(--fontBlack100);
+	font-family: var(--mainFont);
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
