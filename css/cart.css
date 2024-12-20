@@ -60,9 +60,8 @@
 
 .card-header__product-name {
   color: var(--fontBlack100);
-  font-family: Anton;
+	font-family: var(--titleFont);
   font-size: 2.5rem;
-  font-weight: 400;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin-left: 2rem;
@@ -124,28 +123,22 @@
 .destination-address {
   margin-top: 3rem;
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+	font-family: var(--mainFont);
   font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
   text-decoration: underline;
 }
 
 .card-content__product-price {
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+	font-family: var(--mainFont);
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
 }
 
 .card-content__product-amount {
-  font-family: "Space Mono";
+	font-family: var(--mainFont);
   font-size: 1.8rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
   padding: 2rem;
   border-radius: 2rem;
@@ -170,9 +163,8 @@
   display: flex;
   align-items: center;
   color: var(--fontBlack100);
-  font-family: Anton;
+	font-family: var(--titleFont);
   font-size: 2.5rem;
-  font-weight: 400;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   padding-bottom: 3rem;
@@ -186,10 +178,8 @@
   justify-content: space-between;
   padding-bottom: 2rem;
   color: var(--fontBlack100);
-  font-family: "Space Mono";
+	font-family: var(--mainFont);
   font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
   line-height: 2.4rem;
 }
 
@@ -205,7 +195,7 @@
 .payment-btn {
   color: var(--fontWhite);
   text-align: center;
-  font-family: Anton;
+	font-family: var(--titleFont);
   font-size: 2rem;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;

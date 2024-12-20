@@ -9,7 +9,6 @@
 	background-color: var(--bgVanila);
 	border-left: 1px solid var(--borderBlack25);
 	border-top: 1px solid var(--borderBlack25);
-	/* TODO: border black통일필요 */
 
 	:last-of-type {
 		border-right: none;
@@ -66,7 +65,8 @@
 	}
 
 	.section-promotion__content-description {
-		color: --var(fontBlack100);
+		font-family: var(--mainFont);
+		color: var(--fontBlack100);
 		font-size: 1.8rem;
 		line-height: 2.4rem;
 		margin-bottom: 11.47rem;
@@ -131,6 +131,7 @@
 }
 
 .price {
+	font-family: var(--mainFont);
 	color: var(--fontBlack100);
 	font-size: 1.125rem;
 	line-height: 1.5rem;
