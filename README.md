@@ -97,6 +97,32 @@
 <br>
 
 ## 4. 프로젝트 수행경과
+### 4.1 프로젝트 내용
+<img src="https://github.com/user-attachments/assets/efee1a6b-e874-44b1-92ba-87c2b6c7a469" width="700px"/><br>
+<b>메인페이지</b><br>
+1920px로 기준점을 잡아 pc환경 최적화<br><br><br>
+<img width="700" alt="스크린샷 2024-12-20 오후 3 24 54" src="https://github.com/user-attachments/assets/58a6608b-57f9-40ae-931a-e417a4ec4000" /><br>
+<b>반응형 페이지</b><br>
+480px로 기준점을 잡아 모바일 환경 최적화<br><br><br>
+<img src="https://github.com/user-attachments/assets/7a46ab31-28f0-415a-ad64-5f181171212e" width="700px"/><br>
+<b>서브페이지 search.html, cart.html</b><br>
+검색 페이지와 장바구니 페이지 구현<br><br><br>
+<img src="https://github.com/user-attachments/assets/9866c20f-9945-4238-a88a-84faa8f68b91" width="700px"/><br>
+<b>서브페이지 members.html</b><br>
+카페 직원소개 페이지를 카드 형식으로 배치하여 표현<br><br><br>
+<img width="500" alt="애니메이션" src="https://github.com/user-attachments/assets/5795e4e4-d7fd-499e-8d02-cbb3d436c0d2" />
+<img src="https://github.com/user-attachments/assets/cb83ca76-d290-4229-9c36-8b52cb257be6" width="200px" height="500px"/><br>
+<b>애니메이션 효과</b><br>
+Hover시, 360도 회전 및 1.1 스케일 애니메이션 적용 <br><br><br>
+### 4.2 피드백 및 보완 내용
+<img width="700" alt="피드백1" src="https://github.com/user-attachments/assets/ac095518-ded6-4bd1-8cb3-38dac39608a4" /><br>
+<b>반응형 UI 깨짐 issue</b><br>
+메뉴 버튼 깨짐 현상 해결 및 서브페이지 메뉴바 생성<br><br><br>
+<img width="700" alt="피드백2" src="https://github.com/user-attachments/assets/f17fc2ce-52f7-4182-9544-a0f7e226bf3c" /><br>
+<b>특정 브라우저에서 가로스크롤 issue</b><br>
+메타 태그 코드 첨부 후 해결 <br><br><br>
+### 4.3 Figma 디자인 시안과 비교
+<img width="700" alt="실제 구현과 비교" src="https://github.com/user-attachments/assets/a48f8e08-0d2b-4c64-978d-1c007acc4511" />
 
 ## 5. 자체 평가 의견
 
@@ -124,6 +150,7 @@
 </ol>
 
 ### 5.4 완성도
-<img width="755" alt="완성도" src="https://github.com/user-attachments/assets/155adaa0-75d0-4a4e-adc8-1950fc73be94" />
+<img width="700" alt="완성도1" src="https://github.com/user-attachments/assets/943eda96-a42c-47e2-93a0-e6d1adda61eb"/>
+
 
 
