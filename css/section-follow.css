@@ -2,12 +2,13 @@
   color: var(--fontBlack100);
   font-family: var(--titleFont);
   font-size: 7rem;
-  font-weight: 400;
-  line-height: 8rem; /* 114.286% */
+  line-height: 8rem;
+  /* 114.286% */
   letter-spacing: -0.14rem;
   text-transform: uppercase;
   padding: 3.4rem 0 3.2rem 5rem;
   border-bottom: 1px solid var(--fontBlack50);
+
   @media (width < 480px) {
     font-size: 3rem;
     padding: 0;
@@ -24,29 +25,35 @@
   gap: 3.17rem;
   /* width: 100vw; */
   margin: 3.13rem;
+
   .grid-image {
     display: block;
     width: 33.2rem;
     border-radius: 1rem;
     transition: transform 0.2s;
+
     &:hover {
       transition: transform 0.2s;
       transform: scale(1.1);
       cursor: pointer;
     }
   }
-  .grid-image:hover {
-  }
-  .grid-image:hover {
-    animation: rotateAndScale 1s;
-  }
+
+  .grid-image:hover {}
+
   .grid-image:hover {
     animation: rotateAndScale 1s;
   }
+
+  .grid-image:hover {
+    animation: rotateAndScale 1s;
+  }
+
   @media (width < 480px) {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin: 1.5rem;
+
     .grid-image {
       width: 100%;
       /* width: 85%; */
@@ -55,12 +62,14 @@
     }
   }
 }
+
 /* 애니메이션 */
 @keyframes rotateAndScale {
   from {
     transform: rotateY(0deg) scale(1);
     /* filter: opacity(1); */
   }
+
   to {
     transform: rotateY(360deg) scale(1.1);
     /* filter: opacity(0.8); */
