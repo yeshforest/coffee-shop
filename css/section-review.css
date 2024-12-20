@@ -15,7 +15,7 @@
 		position: absolute;
 		top: 2rem;
 		left: 50%;
-		transform: translate(-50%,0);
+		transform: translate(-50%, 0);
 	}
 }
 
@@ -45,7 +45,8 @@
 	}
 
 	@media (width <480px) {
-		margin-top: 18rem; /* 이미지 16 + 공백 2rem */
+		margin-top: 18rem;
+		/* 이미지 16 + 공백 2rem */
 	}
 }
 
@@ -92,7 +93,7 @@
 		display: inline-block;
 		width: 0.8rem;
 		height: 0.8rem;
-		border: 1px solid #1D1D1B;
-		background-color: #1D1D1B;
+		border: 1px solid var(--borderBlack50);
+		background-color: var(--borderBlack50);
 	}
 }

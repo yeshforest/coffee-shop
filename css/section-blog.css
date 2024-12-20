@@ -186,7 +186,7 @@
 
 .section-blog__btn {
     text-decoration: none;
-    background: url(../images/btn_bg.svg) #1D1D1B;
+    background: url(../images/btn_bg.svg) var(--bgBlack);
     margin-left: 6rem;
     margin-top: 63.26rem;
     display: flex;
