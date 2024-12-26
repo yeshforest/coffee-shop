@@ -149,8 +149,5 @@ Hover시, 360도 회전 및 1.1 스케일 애니메이션 적용 <br><br><br>
  <li>화면 비율이 작아졌을 때 비율에 대한 반응형 작업</li>
 </ol>
 
-### 5.4 완성도
-<img width="700" alt="완성도1" src="https://github.com/user-attachments/assets/943eda96-a42c-47e2-93a0-e6d1adda61eb"/>
-
 
 
