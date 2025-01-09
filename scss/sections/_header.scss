@@ -26,7 +26,7 @@
 	line-height: 1.4rem;
 	text-align: center;
 
-	@media (width < 480px) {
+	@media (width < $mobile-size) {
 		font-size: 1.1rem;
 	}
 }
@@ -40,7 +40,7 @@
 	border-bottom: 1px solid $borderBlack100;
 	background-color: $bgWhite100;
 
-	@media (width < 480px) {
+	@media (width < $mobile-size) {
 		grid-template-columns: 1fr min-content;
 		padding-inline: 2.4rem 0.8rem;
 		height: 5rem;
@@ -67,7 +67,7 @@
 		width: 6.4031rem;
 	}
 
-	@media (width <480px) {
+	@media (width <$mobile-size) {
 		display: none;
 	}
 }
@@ -75,7 +75,7 @@
 .header__gnb__btn-menu {
 	display: none;
 
-	@media (width < 480px) {
+	@media (width < $mobile-size) {
 		display: inline-block;
 		background: url(../images/header/ico_menu.svg);
 		position: absolute;
@@ -145,8 +145,6 @@
 					background: none;
 				}
 			}
-
-
 		}
 	}
 }
@@ -168,7 +166,7 @@
 	justify-content: end;
 	gap: 3.68rem;
 
-	@media (width < 480px) {
+	@media (width < $mobile-size) {
 		justify-self: end;
 	}
 }
@@ -195,14 +193,14 @@
 		font-size: 1.7rem;
 	}
 
-	@media (width <480px) {
+	@media (width < $mobile-size) {
 		display: none;
 	}
 }
 
 .btn-open-side-area {
 	padding: 1.95rem 2.2rem;
-	border-left: 1px solid $borderBlack50;
+	@include border(left,$borderBlack50);
 
 	&::after {
 		content: "";
@@ -212,7 +210,7 @@
 		background: url(../images/header/ico_star.svg) no-repeat;
 	}
 
-	@media (width <480px) {
+	@media (width < $mobile-size) {
 		display: none;
 	}
 }

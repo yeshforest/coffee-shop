@@ -1,11 +1,33 @@
 @use "./variables" as *;
 
-@mixin horizontal-scroll{
-  max-width: 100%;
-  overflow-x: hidden;
+@mixin horizontal-scroll {
+	max-width: 100%;
+	overflow-x: hidden;
 }
 
-@mixin underline($width, $height){
+@mixin border($position, $color) {
+	@if($position =="all") {
+		border: 1px solid $color;
+	}
+
+	@else if($position =="top") {
+		border-top: 1px solid $color;
+	}
+
+	@else if($position =="right") {
+		border-right: 1px solid $color;
+	}
+
+	@else if($position =="bottom") {
+		border-bottom: 1px solid $color;
+	}
+
+	@else if($position =="left") {
+		border-left: 1px solid $color;
+	}
+}
+
+@mixin underline($width, $height) {
 	&::after {
 		content: "";
 		display: inline-block;
@@ -19,7 +41,7 @@
 	}
 }
 
-@mixin arrow($direction, $width, $height){
+@mixin arrow($direction, $width, $height) {
 	position: absolute;
 	right: 0;
 	top: 50%;
@@ -30,9 +52,12 @@
 	padding: 1.0016rem 1.5875rem;
 	justify-content: center;
 	align-items: center;
-	@if($direction == "right"){
-		background:  url(../images/ico_right-arrow.svg) $fontYellow no-repeat center;
-	}@else {
-		background:  url(../images/ico_left-arrow.svg) $fontYellow no-repeat center;
+
+	@if($direction =="right") {
+		background: url(../images/ico_right-arrow.svg) $fontYellow no-repeat center;
+	}
+
+	@else {
+		background: url(../images/ico_left-arrow.svg) $fontYellow no-repeat center;
 	}
 }
