@@ -1,6 +1,8 @@
+@use "../abstracts/variables" as *;
+
 .section-menu {
   height: 69.6625rem;
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid $borderBlack75;
 
   @media (width < 480px) {
     display: flex;
@@ -21,7 +23,8 @@
 /* section-menu__menubox */
 .section-menu__menubox {
   width: 50%;
-  padding: 15.84rem 18.24rem 15.94rem 16.32rem;
+  align-self: center;
+  padding: 0 5rem;
 
   li:not(:last-child) {
     margin-bottom: 2.7rem;
@@ -43,8 +46,8 @@
   }
 
   .section-menu__title {
-    color: var(--fontBlack100);
-    font-family: var(--titleFont);
+    color: $fontBlack100;
+    font-family: $titleFont;
     font-size: 2rem;
     line-height: 2.5rem;
     letter-spacing: 0.08rem;
@@ -52,7 +55,7 @@
   }
 
   .section-menu__price {
-    color: var(--fontBlack100);
+    color: $fontBlack100;
     font-size: 1.8rem;
     line-height: 2.4rem;
     letter-spacing: 0.072rem;
@@ -60,16 +63,14 @@
   }
 }
 
-
-
 .section-menu__description {
-  color: var(--fontBlack100);
-	font-family: var(--mainFont);
+  color: $fontBlack100;
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
-/* ///section-menu__menubox */
+/* section-menu__menubox */
 
 .section-menu__menu-image {
   /* flex: 1; */
@@ -85,9 +86,9 @@
 
 /* 반응형 hidden title */
 .section-menu__hidden-title {
-  color: var(--fontYellow);
+  color: $fontYellow;
   text-align: center;
-  font-family: var(--imgFont);
+  font-family: $imgFont;
   font-size: 5rem;
   letter-spacing: -0.4rem;
   display: none;

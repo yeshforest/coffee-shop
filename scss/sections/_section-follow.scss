@@ -1,13 +1,15 @@
+@use "../abstracts/variables" as *;
+
 .section-follow__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: $fontBlack100;
+  font-family: $titleFont;
   font-size: 7rem;
   line-height: 8rem;
   /* 114.286% */
   letter-spacing: -0.14rem;
   text-transform: uppercase;
-  padding: 3.4rem 0 3.2rem 5rem;
-  border-bottom: 1px solid var(--fontBlack50);
+  padding: 3.2rem 0 3.2rem 5rem;
+  border-bottom: 1px solid $fontBlack50;
 
   @media (width < 480px) {
     font-size: 3rem;
@@ -30,23 +32,16 @@
     display: block;
     width: 33.2rem;
     border-radius: 1rem;
-    transition: transform 0.2s;
 
     &:hover {
-      transition: transform 0.2s;
-      transform: scale(1.1);
+      img {
+        transform: rotateY(360deg);
+      }
       cursor: pointer;
     }
-  }
-
-  .grid-image:hover {}
-
-  .grid-image:hover {
-    animation: rotateAndScale 1s;
-  }
-
-  .grid-image:hover {
-    animation: rotateAndScale 1s;
+    img {
+      transition: 0.5s;
+    }
   }
 
   @media (width < 480px) {
@@ -60,18 +55,5 @@
       object-fit: cover;
       border-radius: 1rem;
     }
-  }
-}
-
-/* 애니메이션 */
-@keyframes rotateAndScale {
-  from {
-    transform: rotateY(0deg) scale(1);
-    /* filter: opacity(1); */
-  }
-
-  to {
-    transform: rotateY(360deg) scale(1.1);
-    /* filter: opacity(0.8); */
   }
 }

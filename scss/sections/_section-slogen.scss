@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .section-slogan {
   background-color: var(--bgVanila);
 }
@@ -16,14 +18,14 @@
 .slogen__column-left {
   padding-top: 3.1rem;
   margin-left: 3.1rem;
-  border-right: 1px solid var(--borderBlack75);
+  border-right: 1px solid $borderBlack75;
 
   @media (width < 1200px) {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 0;
-    border-bottom: 1px solid var(--borderBlack75);
+    border-bottom: 1px solid $borderBlack75;
     border-right: none;
     border-left: none;
   }
@@ -31,8 +33,8 @@
 
 .slogen-title {
   position: relative;
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: $fontBlack100;
+  font-family: $titleFont;
   font-size: 7rem;
   line-height: 8rem;
   letter-spacing: -0.14rem;
@@ -78,7 +80,7 @@
   flex-direction: column;
   padding: 3rem;
   padding-left: 3.6rem;
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid $borderBlack75;
 
   &:last-child {
     border-bottom: none;
@@ -90,8 +92,8 @@
 }
 
 .slogen-card__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: $fontBlack100;
+  font-family: $titleFont;
   font-size: 3.5rem;
   line-height: 4.5rem;
   letter-spacing: 0.07rem;
@@ -103,8 +105,8 @@
 }
 
 .slogen-card__text {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: $fontBlack100;
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
 

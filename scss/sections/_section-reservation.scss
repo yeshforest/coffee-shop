@@ -1,19 +1,21 @@
+@use "../abstracts/variables" as *;
+
 .section-reservation {
   display: flex;
-	gap: 2rem;
+  gap: 2rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding-top: 9rem;
   padding-bottom: 8.3rem;
-  border-top: 1px solid var(--borderBlack75);
+  border-top: 1px solid $borderBlack75;
   background-image: url("../images/bg.png");
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid $borderBlack75;
 }
 
 .reservation-title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: $fontBlack100;
+  font-family: $titleFont;
   font-size: 5rem;
   line-height: 6rem;
   letter-spacing: 0.1rem;
@@ -36,7 +38,7 @@
   border: none;
   width: 21.6rem;
   height: 2.3rem;
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid $borderBlack75;
   margin-right: 2.1rem;
   margin-top: 1.7rem;
   margin-bottom: 2.6rem;
@@ -46,21 +48,21 @@
 }
 
 .reservation-option {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: $fontBlack100;
+  font-family: inherit;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .reservation-btn {
-  color: var(--fontWhite);
+  color: $fontWhite;
   text-align: center;
-  font-family: var(--titleFont);
+  font-family: $titleFont;
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background: url(../images/btn_bg.svg) var(--borderBlack75);
+  background: url(../images/btn_bg.svg) $borderBlack75;
   width: 10.1rem;
   padding: 1.3rem 0;
 }

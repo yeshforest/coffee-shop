@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 .section-branch {
   border: 1px solid black;
 }
@@ -13,18 +15,17 @@
 }
 
 .branch-name {
-  border-right: 1px solid var(--borderBlack75);
+  border-right: 1px solid $borderBlack75;
   display: flex;
   align-items: flex-end;
-	padding: 5rem 2rem;
-
+  padding: 5rem 2rem;
 
   @media (width < 1024px) {
     justify-content: center;
     align-items: center;
     padding: 0;
     border: none;
-    border-bottom: 1px solid var(--borderBlack75);
+    border-bottom: 1px solid $borderBlack75;
   }
   a {
     text-decoration: none;
@@ -32,7 +33,7 @@
     transform: rotate(-180deg);
     padding-left: 0.5rem;
     width: 100%;
-    color: var(--fontBlack100);
+    color: $fontBlack100;
     font-family: Anton;
     font-size: 5rem;
     font-weight: 400;
@@ -124,7 +125,7 @@
   height: 3.6rem;
   justify-content: center;
   align-items: center;
-  color: var(--bgWhite100);
+  color: $bgWhite100;
   text-align: center;
   font-family: Anton;
   font-size: 1.0625rem;
@@ -132,5 +133,5 @@
   letter-spacing: 0.085rem;
   text-transform: uppercase;
   border: none;
-	background-color: var(--bgBlack);
+  background-color: $bgBlack;
 }
