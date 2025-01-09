@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .section-review {
 	display: flex;
 	position: relative;
@@ -23,7 +25,7 @@
 	display: flex;
 	width: 50%;
 	flex-direction: column;
-	background: var(--bgWhite100);
+	background: $bgWhite100;
 	justify-content: center;
 	align-items: center;
 	white-space: pre-wrap;
@@ -51,9 +53,9 @@
 }
 
 .section-review__content {
-	color: var(--fontBlack100);
+	color: $fontBlack100;
 	text-align: center;
-	font-family: var(--titleFont);
+	font-family: $titleFont;
 	font-size: 3.5rem;
 	line-height: 4.5rem;
 	letter-spacing: 0.07rem;
@@ -70,8 +72,7 @@
 }
 
 .section-review__name {
-	color: var(--fontBlack100);
-	font-family: var(--mainFont);
+	color: $fontBlack100;
 	text-align: center;
 	font-size: 1.8rem;
 	line-height: 3rem;
@@ -85,7 +86,7 @@
 
 	:first-child .section-review__pagination-indicator-item::after,
 	:last-child .section-review__pagination-indicator-item::after {
-		background-color: var(--bgWhite100);
+		background-color: $bgWhite100;
 	}
 
 	.section-review__pagination-indicator-item::after {
@@ -93,7 +94,7 @@
 		display: inline-block;
 		width: 0.8rem;
 		height: 0.8rem;
-		border: 1px solid var(--borderBlack50);
-		background-color: var(--borderBlack50);
+		border: 1px solid $borderBlack50;
+		background-color: $borderBlack50;
 	}
 }

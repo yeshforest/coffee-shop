@@ -1,14 +1,16 @@
+@use "./variables" as *;
+
 @mixin horizontal-scroll{
   max-width: 100%;
   overflow-x: hidden;
 }
 
-@mixin underline{
+@mixin underline($width, $height){
 	&::after {
 		content: "";
 		display: inline-block;
-		width: 5.3625rem;
-		height: 0.4797rem;
+		width: $width;
+		height: $height;
 		background: url(../images/underline.svg) no-repeat;
 		position: absolute;
 		background-size: cover;
@@ -17,16 +19,20 @@
 	}
 }
 
-@mixin arrow-right{
+@mixin arrow($direction, $width, $height){
 	position: absolute;
 	right: 0;
 	top: 50%;
 	transform: translate(0, -50%);
 	display: flex;
-	width: 8.4rem;
-	height: 6.5rem;
+	width: $width;
+	height: $height;
 	padding: 1.0016rem 1.5875rem;
 	justify-content: center;
 	align-items: center;
-	background: url(../images/ico_right-arrow.svg) var(--fontYellow) no-repeat center;
+	@if($direction == "right"){
+		background:  url(../images/ico_right-arrow.svg) $fontYellow no-repeat center;
+	}@else {
+		background:  url(../images/ico_left-arrow.svg) $fontYellow no-repeat center;
+	}
 }

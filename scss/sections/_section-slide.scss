@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .section-slide {
 	display: flex;
 	height: 100vh;
@@ -57,8 +59,8 @@
 
 .section-slide__title {
 	position: absolute;
-	color: var(--fontBlack100);
-	font-family: var(--titleFont);
+	color: $fontBlack100;
+	font-family: $titleFont;
 	font-size: 12rem;
 	line-height: 13rem;
 	text-transform: uppercase;
@@ -102,9 +104,9 @@
 		line-height: 150%;
 
 
-	&::after {
-		left: 0rem;
-	}
+		&::after {
+			left: 0rem;
+		}
 	}
 }
 
@@ -113,7 +115,7 @@
 	justify-content: center;
 	padding: 1.1rem 0;
 	width: 100%;
-	background-color: var(--bgWhite100);
+	background-color: $bgWhite100;
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -122,7 +124,7 @@
 	>li::after {
 		content: " | ";
 		white-space: pre-wrap;
-		color: var(--fontBlack100);
+		color: $fontBlack100;
 		font-size: 1.6rem;
 		line-height: 3.8rem;
 	}
@@ -133,17 +135,7 @@
 }
 
 .btn-prev {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	transform: translate(0, -50%);
-	display: flex;
-	width: 8.4rem;
-	height: 6.5rem;
-	padding: 1.0016rem 1.5875rem 1.0016rem 1.5859rem;
-	justify-content: center;
-	align-items: center;
-	background: url(../images/ico_left-arrow.svg) var(--fontYellow) no-repeat center;
+	@include arrow(left, 8.4rem, 6.5rem);
 
 	@media (width < 480px) {
 		width: 4.2rem;
@@ -155,17 +147,7 @@
 }
 
 .btn-next {
-	position: absolute;
-	right: 0;
-	top: 50%;
-	transform: translate(0, -50%);
-	display: flex;
-	width: 8.4rem;
-	height: 6.5rem;
-	padding: 1.0016rem 1.5875rem;
-	justify-content: center;
-	align-items: center;
-	background: url(../images/ico_right-arrow.svg) var(--fontYellow) no-repeat center;
+	@include arrow(right, 8.4rem, 6.5rem);
 
 	@media (width < 480px) {
 		width: 4.2rem;

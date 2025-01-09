@@ -1,3 +1,5 @@
+@use "../abstracts/" as *;
+
 .section-promotion {
 	display: flex;
 	flex-direction: column;
@@ -6,9 +8,9 @@
 .section-promotion__product-container {
 	display: grid;
 	grid-template-columns: 2fr 1fr 1fr 0.01fr;
-	background-color: var(--bgVanila);
-	border-left: 1px solid var(--borderBlack25);
-	border-top: 1px solid var(--borderBlack25);
+	background-color: $bgVanila;
+	border-left: 1px solid $borderBlack25;
+	border-top: 1px solid $borderBlack25;
 
 	:last-of-type {
 		border-right: none;
@@ -22,12 +24,12 @@
 
 .section-promotion__content {
 	padding: 8.2rem 2.58rem 7.8rem 9.34rem;
-	border-right: 1px solid var(--borderBlack25);
-	border-bottom: 1px solid var(--borderBlack25);
+	border-right: 1px solid $borderBlack25;
+	border-bottom: 1px solid $borderBlack25;
 
 	.section-promotion__content-title {
-		color: var(--fontBlack100);
-		font-family: var(--titleFont);
+		color: $fontBlack100;
+		font-family: $titleFont;
 		font-size: 5rem;
 		line-height: 6rem;
 		letter-spacing: 0.1rem;
@@ -65,8 +67,7 @@
 	}
 
 	.section-promotion__content-description {
-		font-family: var(--mainFont);
-		color: var(--fontBlack100);
+		color: $fontBlack100;
 		font-size: 1.8rem;
 		line-height: 2.4rem;
 		margin-bottom: 11.47rem;
@@ -78,9 +79,9 @@
 }
 
 .btn-viewmore {
-	color: var(--fontBlack50);
+	color: $fontBlack50;
 	text-align: center;
-	font-family: var(--titleFont);
+	font-family: $titleFont;
 	font-size: 1.6rem;
 	line-height: 1.6rem;
 	letter-spacing: 0.096rem;
@@ -89,13 +90,13 @@
 }
 
 .btn-viewmore::after {
+	position: absolute;
 	display: inline-block;
 	content: "";
 	background: url(../images/ico_right-arrow.svg) no-repeat;
 	background-size: cover;
 	width: 2.8rem;
 	height: 2.55rem;
-	position: absolute;
 	top: -0.5rem;
 	left: 8rem;
 }
@@ -103,8 +104,8 @@
 .section-promotion__product {
 	display: flex;
 	flex-direction: column;
-	border-right: 1px solid var(--borderBlack25);
-	border-bottom: 1px solid var(--borderBlack25);
+	border-right: 1px solid $borderBlack25;
+	border-bottom: 1px solid $borderBlack25;
 
 	img {
 		align-self: center;
@@ -119,8 +120,8 @@
 	}
 
 	.section-promotion__product-title {
-		color: var(--fontBlack100);
-		font-family: var(--titleFont);
+		color: $fontBlack100;
+		font-family: $titleFont;
 		font-size: 1.5625rem;
 		line-height: 1.875rem;
 		letter-spacing: 0.03125rem;
@@ -131,8 +132,7 @@
 }
 
 .price {
-	font-family: var(--mainFont);
-	color: var(--fontBlack100);
+	color: $fontBlack100;
 	font-size: 1.125rem;
 	line-height: 1.5rem;
 	margin-left: 4.3rem;
@@ -156,9 +156,9 @@
 		left: 50vw;
 		transform: translate(-50%, -50%);
 
-		color: var(--fontWhite);
+		color: $fontWhite;
 		text-align: center;
-		font-family: var(--titleFont);
+		font-family: $titleFont;
 		font-size: 10rem;
 		line-height: 11rem;
 		letter-spacing: -0.2rem;

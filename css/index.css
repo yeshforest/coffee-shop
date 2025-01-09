@@ -325,6 +325,14 @@ a {
   }
 }
 
+.a11y-hidden {
+  overflow: hidden;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  clear: rect(1px, 1px, 1px, 1px);
+}
+
 .header {
   display: inline-flex;
   flex-direction: column;
@@ -341,9 +349,8 @@ a {
   padding: 1rem;
   margin: 0 auto;
   color: #ffffff;
-  font-family: var(--mainFont);
   width: 100%;
-  background-color: var(--bgBlack);
+  background-color: #1d1d1b;
   font-size: 1.4rem;
   line-height: 1.4rem;
   text-align: center;
@@ -360,8 +367,8 @@ a {
   align-items: center;
   justify-content: center;
   height: 10rem;
-  border-bottom: 1px solid var(--borderBlack100);
-  background-color: var(--bgWhite100);
+  border-bottom: 1px solid #707070;
+  background-color: #ffffff;
 }
 @media (width < 480px) {
   .header__container {
@@ -377,12 +384,10 @@ a {
   margin-left: 4rem;
 }
 .header__gnb a {
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.7rem;
   line-height: 2.4rem;
   position: relative;
-  text-decoration: none;
-  font-family: var(--mainFont);
 }
 .header__gnb a::after {
   content: "";
@@ -432,7 +437,7 @@ a {
   top: 8.8rem;
   /* button width 2.4 + header 6.4 rem */
   left: 0;
-  background-color: var(--bgWhite100);
+  background-color: #ffffff;
 }
 .open + .header__gnb > ul {
   display: flex;
@@ -454,7 +459,7 @@ a {
 .open + .header__gnb ~ .header__utillity > .header__utillity_inner {
   display: flex;
   flex-direction: column;
-  background-color: var(--bgWhite100);
+  background-color: #ffffff;
   position: absolute;
   top: 28rem;
   left: 0;
@@ -468,7 +473,6 @@ a {
   align-items: center;
   width: 100%;
   height: 3rem;
-  font-family: var(--mainFont);
 }
 .open + .header__gnb ~ .header__utillity > .header__utillity_inner > a::after {
   content: "";
@@ -491,7 +495,6 @@ a {
   align-items: center;
   justify-content: end;
   gap: 3.68rem;
-  font-family: var(--mainFont);
 }
 @media (width < 480px) {
   .header__utillity {
@@ -508,7 +511,7 @@ a {
 .header__utillity_inner .btn-cart {
   position: relative;
   text-decoration: none;
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.7rem;
 }
 .header__utillity_inner .btn-cart::after {
@@ -520,12 +523,12 @@ a {
   position: absolute;
   background-size: cover;
   bottom: -0.4rem;
-  left: 0rem;
+  left: 0;
 }
 .header__utillity_inner .btn-search {
   position: relative;
   text-decoration: none;
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.7rem;
 }
 .header__utillity_inner .btn-search::after {
@@ -537,7 +540,7 @@ a {
   position: absolute;
   background-size: cover;
   bottom: -0.4rem;
-  left: 0.3rem;
+  left: 0;
 }
 @media (width < 480px) {
   .header__utillity_inner {
@@ -547,7 +550,7 @@ a {
 
 .btn-open-side-area {
   padding: 1.95rem 2.2rem;
-  border-left: 1px solid var(--borderBlack50);
+  border-left: 1px solid #1d1d1b;
 }
 .btn-open-side-area::after {
   content: "";
@@ -1634,9 +1637,9 @@ a {
 .section-promotion__product-container {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 0.01fr;
-  background-color: var(--bgVanila);
-  border-left: 1px solid var(--borderBlack25);
-  border-top: 1px solid var(--borderBlack25);
+  background-color: #fdf1d9;
+  border-left: 1px solid #000000;
+  border-top: 1px solid #000000;
 }
 .section-promotion__product-container :last-of-type {
   border-right: none;
@@ -1650,12 +1653,12 @@ a {
 
 .section-promotion__content {
   padding: 8.2rem 2.58rem 7.8rem 9.34rem;
-  border-right: 1px solid var(--borderBlack25);
-  border-bottom: 1px solid var(--borderBlack25);
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 .section-promotion__content .section-promotion__content-title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 5rem;
   line-height: 6rem;
   letter-spacing: 0.1rem;
@@ -1690,8 +1693,7 @@ a {
   }
 }
 .section-promotion__content .section-promotion__content-description {
-  font-family: var(--mainFont);
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.8rem;
   line-height: 2.4rem;
   margin-bottom: 11.47rem;
@@ -1703,9 +1705,9 @@ a {
 }
 
 .btn-viewmore {
-  color: var(--fontBlack50);
+  color: #1d1d1b;
   text-align: center;
-  font-family: var(--titleFont);
+  font-family: "Anton", sans-serif;
   font-size: 1.6rem;
   line-height: 1.6rem;
   letter-spacing: 0.096rem;
@@ -1714,13 +1716,13 @@ a {
 }
 
 .btn-viewmore::after {
+  position: absolute;
   display: inline-block;
   content: "";
   background: url(../images/ico_right-arrow.svg) no-repeat;
   background-size: cover;
   width: 2.8rem;
   height: 2.55rem;
-  position: absolute;
   top: -0.5rem;
   left: 8rem;
 }
@@ -1728,8 +1730,8 @@ a {
 .section-promotion__product {
   display: flex;
   flex-direction: column;
-  border-right: 1px solid var(--borderBlack25);
-  border-bottom: 1px solid var(--borderBlack25);
+  border-right: 1px solid #000000;
+  border-bottom: 1px solid #000000;
 }
 .section-promotion__product img {
   align-self: center;
@@ -1744,8 +1746,8 @@ a {
   }
 }
 .section-promotion__product .section-promotion__product-title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 1.5625rem;
   line-height: 1.875rem;
   letter-spacing: 0.03125rem;
@@ -1755,8 +1757,7 @@ a {
 }
 
 .price {
-  font-family: var(--mainFont);
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.125rem;
   line-height: 1.5rem;
   margin-left: 4.3rem;
@@ -1779,9 +1780,9 @@ a {
   top: 50%;
   left: 50vw;
   transform: translate(-50%, -50%);
-  color: var(--fontWhite);
+  color: #ffffff;
   text-align: center;
-  font-family: var(--titleFont);
+  font-family: "Anton", sans-serif;
   font-size: 10rem;
   line-height: 11rem;
   letter-spacing: -0.2rem;
@@ -1899,7 +1900,7 @@ a {
   display: flex;
   width: 50%;
   flex-direction: column;
-  background: var(--bgWhite100);
+  background: #ffffff;
   justify-content: center;
   align-items: center;
   white-space: pre-wrap;
@@ -1929,9 +1930,9 @@ a {
 }
 
 .section-review__content {
-  color: var(--fontBlack100);
+  color: #202020;
   text-align: center;
-  font-family: var(--titleFont);
+  font-family: "Anton", sans-serif;
   font-size: 3.5rem;
   line-height: 4.5rem;
   letter-spacing: 0.07rem;
@@ -1949,8 +1950,7 @@ a {
 }
 
 .section-review__name {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
   text-align: center;
   font-size: 1.8rem;
   line-height: 3rem;
@@ -1965,15 +1965,15 @@ a {
 }
 .section-review__pagination-indicator :first-child .section-review__pagination-indicator-item::after,
 .section-review__pagination-indicator :last-child .section-review__pagination-indicator-item::after {
-  background-color: var(--bgWhite100);
+  background-color: #ffffff;
 }
 .section-review__pagination-indicator .section-review__pagination-indicator-item::after {
   content: "";
   display: inline-block;
   width: 0.8rem;
   height: 0.8rem;
-  border: 1px solid var(--borderBlack50);
-  background-color: var(--borderBlack50);
+  border: 1px solid #1d1d1b;
+  background-color: #1d1d1b;
 }
 
 .section-school {
@@ -2149,8 +2149,8 @@ a {
 
 .section-slide__title {
   position: absolute;
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 12rem;
   line-height: 13rem;
   text-transform: uppercase;
@@ -2204,7 +2204,7 @@ a {
   justify-content: center;
   padding: 1.1rem 0;
   width: 100%;
-  background-color: var(--bgWhite100);
+  background-color: #ffffff;
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -2213,7 +2213,7 @@ a {
 .section-slide__indicator > li::after {
   content: " | ";
   white-space: pre-wrap;
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.6rem;
   line-height: 3.8rem;
 }
@@ -2223,16 +2223,16 @@ a {
 
 .btn-prev {
   position: absolute;
-  left: 0;
+  right: 0;
   top: 50%;
   transform: translate(0, -50%);
   display: flex;
   width: 8.4rem;
   height: 6.5rem;
-  padding: 1.0016rem 1.5875rem 1.0016rem 1.5859rem;
+  padding: 1.0016rem 1.5875rem;
   justify-content: center;
   align-items: center;
-  background: url(../images/ico_left-arrow.svg) var(--fontYellow) no-repeat center;
+  background: url(../images/ico_left-arrow.svg) #fbed81 no-repeat center;
 }
 @media (width < 480px) {
   .btn-prev {
@@ -2254,7 +2254,7 @@ a {
   padding: 1.0016rem 1.5875rem;
   justify-content: center;
   align-items: center;
-  background: url(../images/ico_right-arrow.svg) var(--fontYellow) no-repeat center;
+  background: url(../images/ico_right-arrow.svg) #fbed81 no-repeat center;
 }
 @media (width < 480px) {
   .btn-next {

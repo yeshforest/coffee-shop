@@ -1,5 +1,9 @@
 @use "../abstracts/" as *;
 
+.a11y-hidden {
+	@include a11y-hidden;
+}
+
 .header {
 	display: inline-flex;
 	flex-direction: column;
@@ -16,9 +20,8 @@
 	padding: 1rem;
 	margin: 0 auto;
 	color: $fontWhite;
-	font-family: var(--mainFont);
 	width: 100%;
-	background-color: var(--bgBlack);
+	background-color: $bgBlack;
 	font-size: 1.4rem;
 	line-height: 1.4rem;
 	text-align: center;
@@ -34,8 +37,8 @@
 	align-items: center;
 	justify-content: center;
 	height: 10rem;
-	border-bottom: 1px solid var(--borderBlack100);
-	background-color: var(--bgWhite100);
+	border-bottom: 1px solid $borderBlack100;
+	background-color: $bgWhite100;
 
 	@media (width < 480px) {
 		grid-template-columns: 1fr min-content;
@@ -52,24 +55,11 @@
 	}
 
 	a {
-		color: var(--fontBlack100);
+		@include underline(5.3625rem, 0.4797rem);
+		color: $fontBlack100;
 		font-size: 1.7rem;
 		line-height: 2.4rem;
 		position: relative;
-		text-decoration: none;
-		font-family: var(--mainFont);
-// TODO: underline mixin
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 5.3625rem;
-			height: 0.4797rem;
-			background: url(../images/underline.svg) no-repeat;
-			position: absolute;
-			background-size: cover;
-			bottom: -0.4rem;
-			left: 0;
-		}
 	}
 
 	li:nth-child(2) a::after {
@@ -108,7 +98,7 @@
 	top: 8.8rem;
 	/* button width 2.4 + header 6.4 rem */
 	left: 0;
-	background-color: var(--bgWhite100);
+	background-color: $bgWhite100;
 
 	>ul {
 		display: flex;
@@ -119,44 +109,43 @@
 		margin: 0.8rem;
 	}
 
-	> ul > li{
+	>ul>li {
 		display: flex;
 		justify-content: center;
 		width: 100%;
 		height: 3rem;
 
-		>a::after{
+		>a::after {
 			content: '';
-		background: none;
+			background: none;
 		}
 	}
 
-	~.header__utillity{
-		> .header__utillity_inner{
-			display: flex;	
+	~.header__utillity {
+		>.header__utillity_inner {
+			display: flex;
 			flex-direction: column;
-			background-color: var(--bgWhite100);
+			background-color: $bgWhite100;
 			position: absolute;
 			top: 28rem;
-			left:0;
+			left: 0;
 			width: 100%;
 			gap: 2rem;
 			padding: 0.8rem;
-		
-			> a{
+
+			>a {
 				display: flex;
 				justify-content: center;
 				align-items: center;
 				width: 100%;
 				height: 3rem;
-				font-family: var(--mainFont);
 
 				&::after {
 					content: "";
 					background: none;
 				}
 			}
-		
+
 
 		}
 	}
@@ -178,7 +167,6 @@
 	align-items: center;
 	justify-content: end;
 	gap: 3.68rem;
-	font-family: var(--mainFont);
 
 	@media (width < 480px) {
 		justify-self: end;
@@ -192,41 +180,19 @@
 	white-space: nowrap;
 
 	.btn-cart {
+		@include underline(5.3625rem, 0.4797rem);
 		position: relative;
 		text-decoration: none;
-		color: var(--fontBlack100);
+		color: $fontBlack100;
 		font-size: 1.7rem;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 5.3625rem;
-			height: 0.4797rem;
-			background: url(../images/underline.svg) no-repeat;
-			position: absolute;
-			background-size: cover;
-			bottom: -0.4rem;
-			left: 0rem;
-		}
 	}
 
 	.btn-search {
+		@include underline(5.3625rem, 0.4797rem);
 		position: relative;
 		text-decoration: none;
-		color: var(--fontBlack100);
+		color: $fontBlack100;
 		font-size: 1.7rem;
-
-		&::after {
-			content: "";
-			display: inline-block;
-			width: 5.3625rem;
-			height: 0.4797rem;
-			background: url(../images/underline.svg) no-repeat;
-			position: absolute;
-			background-size: cover;
-			bottom: -0.4rem;
-			left: 0.3rem;
-		}
 	}
 
 	@media (width <480px) {
@@ -236,7 +202,7 @@
 
 .btn-open-side-area {
 	padding: 1.95rem 2.2rem;
-	border-left: 1px solid var(--borderBlack50);
+	border-left: 1px solid $borderBlack50;
 
 	&::after {
 		content: "";
