@@ -103,7 +103,7 @@ a {
   flex-direction: column;
   padding: 5rem 2rem;
   border-radius: 1rem;
-  background-color: var(--bgWhite50);
+  background-color: #f8f8f8;
 }
 @media (width < 480px) {
   .cart__cards {
@@ -146,17 +146,20 @@ a {
   cursor: pointer;
 }
 .card-header__checkbox:checked {
-  border-color: var(--bgBlack);
-  background-color: var(--bgBlack);
+  border-color: #1d1d1b;
+  background-color: #1d1d1b;
 }
 
 .card-header__product-name {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   margin-left: 2rem;
+}
+.card-header__product-name:hover {
+  cursor: pointer;
 }
 
 .card-header__right i {
@@ -194,7 +197,7 @@ a {
   width: 35rem;
   border-radius: 1rem;
   padding: 5rem 2rem;
-  background-color: var(--bgWhite50);
+  background-color: #f8f8f8;
 }
 @media (width < 480px) {
   .cart__column-right-top {
@@ -207,39 +210,49 @@ a {
 }
 .cart-destination i,
 .cart-destination h3 {
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 2.5rem;
   line-height: 2.4rem;
 }
 .cart-destination h3 {
   margin-left: 2rem;
-  font-family: var(--titleFont);
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
 }
 
 .destination-address {
   margin-top: 3rem;
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.2rem;
   line-height: 2.4rem;
   text-decoration: underline;
 }
 
 .card-content__product-price {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
 .card-content__product-amount {
-  font-family: var(--mainFont);
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
   padding: 2rem;
+}
+.card-content__product-amount span {
+  padding: 0 2rem;
+}
+.card-content__product-amount i {
   border-radius: 2rem;
-  background-color: var(--fontYellow);
+  background-color: #fbed81;
+  padding: 1rem;
+  inset: 1;
+}
+.card-content__product-amount i:hover {
+  cursor: pointer;
 }
 @media (width < 480px) {
   .card-content__product-amount {
@@ -251,7 +264,7 @@ a {
   width: 35rem;
   border-radius: 1rem;
   padding: 5rem 2rem;
-  background-color: var(--bgWhite50);
+  background-color: #f8f8f8;
   margin-top: 2rem;
 }
 @media (width < 480px) {
@@ -263,8 +276,8 @@ a {
 .payment-title {
   display: flex;
   align-items: center;
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
@@ -278,8 +291,8 @@ a {
   display: flex;
   justify-content: space-between;
   padding-bottom: 2rem;
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.2rem;
   line-height: 2.4rem;
 }
@@ -294,14 +307,14 @@ a {
 }
 
 .payment-btn {
-  color: var(--fontWhite);
+  color: #ffffff;
   text-align: center;
-  font-family: var(--titleFont);
+  font-family: "Anton", sans-serif;
   font-size: 2rem;
   line-height: 1.5rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background: url(../images/btn_bg.svg) var(--borderBlack75);
+  background: url(../images/btn_bg.svg) #202020;
   width: 31.5rem;
   padding: 1.3rem 0;
   margin-bottom: 5.8rem;
@@ -551,7 +564,7 @@ a {
 
 .footer {
   padding: 6.8rem 7rem;
-  border-top: 1px solid var(--borderBlack50);
+  border-top: 1px solid #1d1d1b;
 }
 
 /* 전체 플렉스박스 */
@@ -559,8 +572,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.6rem;
   line-height: 2.8rem;
 }
@@ -595,8 +608,8 @@ a {
 }
 
 .footer__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 3rem;
   line-height: 3.8571rem;
   letter-spacing: 0.06rem;
@@ -629,8 +642,8 @@ a {
 .footer__sns li a {
   position: relative;
   padding-bottom: 5px;
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.6rem;
   line-height: 2.8rem;
   text-decoration: none;
@@ -659,7 +672,6 @@ a {
   content: "";
   display: inline-block;
   width: 100%;
-  /* 5.3625rem; */
   height: 0.4797rem;
   background: url("../images/underline.svg") no-repeat;
   position: absolute;
@@ -853,8 +865,8 @@ a {
   margin-top: 100px;
 }
 .search-logo span:first-child {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 7rem;
   line-height: 6rem;
   letter-spacing: 0.1rem;
@@ -862,8 +874,8 @@ a {
   margin-bottom: 5rem;
 }
 .search-logo p {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 3rem;
   line-height: 6rem;
   letter-spacing: 0.1rem;
@@ -914,8 +926,8 @@ a {
 }
 
 .recommand__product-name {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1rem;
   line-height: 3.8rem; /* 237.5% */
 }
@@ -1189,7 +1201,7 @@ a {
 }
 
 .branch-name {
-  border-right: 1px solid var(--borderBlack75);
+  border-right: 1px solid #202020;
   display: flex;
   align-items: flex-end;
   padding: 5rem 2rem;
@@ -1200,7 +1212,7 @@ a {
     align-items: center;
     padding: 0;
     border: none;
-    border-bottom: 1px solid var(--borderBlack75);
+    border-bottom: 1px solid #202020;
   }
 }
 .branch-name a {
@@ -1209,7 +1221,7 @@ a {
   transform: rotate(-180deg);
   padding-left: 0.5rem;
   width: 100%;
-  color: var(--fontBlack100);
+  color: #202020;
   font-family: Anton;
   font-size: 5rem;
   font-weight: 400;
@@ -1303,7 +1315,7 @@ a {
   height: 3.6rem;
   justify-content: center;
   align-items: center;
-  color: var(--bgWhite100);
+  color: #ffffff;
   text-align: center;
   font-family: Anton;
   font-size: 1.0625rem;
@@ -1311,7 +1323,7 @@ a {
   letter-spacing: 0.085rem;
   text-transform: uppercase;
   border: none;
-  background-color: var(--bgBlack);
+  background-color: #1d1d1b;
 }
 
 .section-client__title {
@@ -1371,15 +1383,15 @@ a {
 }
 
 .section-follow__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 7rem;
   line-height: 8rem;
   /* 114.286% */
   letter-spacing: -0.14rem;
   text-transform: uppercase;
-  padding: 3.4rem 0 3.2rem 5rem;
-  border-bottom: 1px solid var(--fontBlack50);
+  padding: 3.2rem 0 3.2rem 5rem;
+  border-bottom: 1px solid #1d1d1b;
 }
 @media (width < 480px) {
   .section-follow__title {
@@ -1403,18 +1415,15 @@ a {
   display: block;
   width: 33.2rem;
   border-radius: 1rem;
-  transition: transform 0.2s;
 }
 .section-follow__grid-container .grid-image:hover {
-  transition: transform 0.2s;
-  transform: scale(1.1);
   cursor: pointer;
 }
-.section-follow__grid-container .grid-image:hover {
-  animation: rotateAndScale 1s;
+.section-follow__grid-container .grid-image:hover img {
+  transform: rotateY(360deg);
 }
-.section-follow__grid-container .grid-image:hover {
-  animation: rotateAndScale 1s;
+.section-follow__grid-container .grid-image img {
+  transition: 0.5s;
 }
 @media (width < 480px) {
   .section-follow__grid-container {
@@ -1431,20 +1440,9 @@ a {
   }
 }
 
-/* 애니메이션 */
-@keyframes rotateAndScale {
-  from {
-    transform: rotateY(0deg) scale(1);
-    /* filter: opacity(1); */
-  }
-  to {
-    transform: rotateY(360deg) scale(1.1);
-    /* filter: opacity(0.8); */
-  }
-}
 .section-menu {
   height: 69.6625rem;
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid #202020;
 }
 @media (width < 480px) {
   .section-menu {
@@ -1467,7 +1465,8 @@ a {
 /* section-menu__menubox */
 .section-menu__menubox {
   width: 50%;
-  padding: 15.84rem 18.24rem 15.94rem 16.32rem;
+  align-self: center;
+  padding: 0 5rem;
 }
 .section-menu__menubox li:not(:last-child) {
   margin-bottom: 2.7rem;
@@ -1490,15 +1489,15 @@ a {
   }
 }
 .section-menu__item .section-menu__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: 0.08rem;
   text-transform: uppercase;
 }
 .section-menu__item .section-menu__price {
-  color: var(--fontBlack100);
+  color: #202020;
   font-size: 1.8rem;
   line-height: 2.4rem;
   letter-spacing: 0.072rem;
@@ -1506,13 +1505,13 @@ a {
 }
 
 .section-menu__description {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
-/* ///section-menu__menubox */
+/* section-menu__menubox */
 .section-menu__menu-image {
   /* flex: 1; */
   width: 50%;
@@ -1528,9 +1527,9 @@ a {
 
 /* 반응형 hidden title */
 .section-menu__hidden-title {
-  color: var(--fontYellow);
+  color: #fbed81;
   text-align: center;
-  font-family: var(--imgFont);
+  font-family: "Mansalva", sans-serif;
   font-size: 5rem;
   letter-spacing: -0.4rem;
   display: none;
@@ -1543,8 +1542,8 @@ a {
 }
 
 .product-title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 7rem;
   line-height: 8rem;
   letter-spacing: -0.14rem;
@@ -1565,16 +1564,16 @@ a {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(165px, 1fr));
   grid-template-rows: 1fr;
-  border-top: 1px solid var(--borderBlack75);
-  border-left: 1px solid var(--borderBlack75);
+  border-top: 1px solid #202020;
+  border-left: 1px solid #202020;
 }
 
 .card {
   position: relative;
   padding: 2.6rem;
   padding-bottom: 2.2rem;
-  border-right: 1px solid var(--borderBlack75);
-  border-bottom: 1px solid var(--borderBlack75);
+  border-right: 1px solid #202020;
+  border-bottom: 1px solid #202020;
 }
 
 .product-card__img {
@@ -1590,8 +1589,8 @@ a {
 }
 
 .product-card__name {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: 0.05rem;
@@ -1601,21 +1600,21 @@ a {
 }
 
 .product-card__price {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
 
 .product-card__bedge-new,
 .product-card__bedge-sold {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 1.125rem;
   line-height: 1.125rem;
   letter-spacing: 0.01125rem;
   text-transform: uppercase;
-  background-color: var(--fontYellow);
+  background-color: #fbed81;
   padding: 0.25rem 1.2rem;
   position: absolute;
   top: 10px;
@@ -1623,8 +1622,8 @@ a {
 }
 
 .product-card__bedge-sold {
-  background-color: var(--bgBlack);
-  color: var(--bgWhite100);
+  background-color: #1d1d1b;
+  color: #ffffff;
 }
 
 .section-promotion {
@@ -1810,14 +1809,14 @@ a {
   justify-content: center;
   padding-top: 9rem;
   padding-bottom: 8.3rem;
-  border-top: 1px solid var(--borderBlack75);
+  border-top: 1px solid #202020;
   background-image: url("../images/bg.png");
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid #202020;
 }
 
 .reservation-title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 5rem;
   line-height: 6rem;
   letter-spacing: 0.1rem;
@@ -1841,7 +1840,7 @@ a {
   border: none;
   width: 21.6rem;
   height: 2.3rem;
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid #202020;
   margin-right: 2.1rem;
   margin-top: 1.7rem;
   margin-bottom: 2.6rem;
@@ -1853,21 +1852,21 @@ a {
 }
 
 .reservation-option {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1rem;
   line-height: 1.5rem;
 }
 
 .reservation-btn {
-  color: var(--fontWhite);
+  color: #ffffff;
   text-align: center;
-  font-family: var(--titleFont);
+  font-family: "Anton", sans-serif;
   font-size: 1rem;
   line-height: 1rem;
   letter-spacing: 0.1rem;
   text-transform: uppercase;
-  background: url(../images/btn_bg.svg) var(--borderBlack75);
+  background: url(../images/btn_bg.svg) #202020;
   width: 10.1rem;
   padding: 1.3rem 0;
 }
@@ -2285,7 +2284,7 @@ a {
 .slogen__column-left {
   padding-top: 3.1rem;
   margin-left: 3.1rem;
-  border-right: 1px solid var(--borderBlack75);
+  border-right: 1px solid #202020;
 }
 @media (width < 1200px) {
   .slogen__column-left {
@@ -2293,7 +2292,7 @@ a {
     flex-direction: column;
     align-items: center;
     margin-left: 0;
-    border-bottom: 1px solid var(--borderBlack75);
+    border-bottom: 1px solid #202020;
     border-right: none;
     border-left: none;
   }
@@ -2301,8 +2300,8 @@ a {
 
 .slogen-title {
   position: relative;
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 7rem;
   line-height: 8rem;
   letter-spacing: -0.14rem;
@@ -2351,7 +2350,7 @@ a {
   flex-direction: column;
   padding: 3rem;
   padding-left: 3.6rem;
-  border-bottom: 1px solid var(--borderBlack75);
+  border-bottom: 1px solid #202020;
 }
 .slogen-card:last-child {
   border-bottom: none;
@@ -2363,8 +2362,8 @@ a {
 }
 
 .slogen-card__title {
-  color: var(--fontBlack100);
-  font-family: var(--titleFont);
+  color: #202020;
+  font-family: "Anton", sans-serif;
   font-size: 3.5rem;
   line-height: 4.5rem;
   letter-spacing: 0.07rem;
@@ -2377,8 +2376,8 @@ a {
 }
 
 .slogen-card__text {
-  color: var(--fontBlack100);
-  font-family: var(--mainFont);
+  color: #202020;
+  font-family: inherit;
   font-size: 1.8rem;
   line-height: 2.4rem;
 }
